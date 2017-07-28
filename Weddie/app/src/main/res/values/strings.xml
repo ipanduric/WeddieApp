@@ -1,0 +1,326 @@
+<resources>
+    <string name="app_name">Weddie</string>
+    <string name="VidiSale">VIDI SALE</string>
+    <string name="IzracunajPotrebe">IZRAČUNAJ POTREBE</string>
+    <string name="Glazba">GLAZBA</string>
+    <string name="Fotografija">FOTO</string>
+    <string name="Cvijece">CVIJEĆE</string>
+    <string name="SastaviChecklist">SASTAVI CHECK LIST</string>
+    <string name="VidiCheckList">VIDI CHECK LIST</string>
+    <string name="DodajGoste">DODAJ GOSTE</string>
+    <string name="Trazi">TRAŽI</string>
+    <string name="Web">Web mjesto:</string>
+    <string name="Tel">Broj telefona:</string>
+    <string name="Adr">Adresa:</string>
+    <string-array name="gIme">
+        <item>Allegro Band Osijek</item>
+        <item>Alkotest Band Belišće</item>
+        <item>Babylon Band Vinkovci</item>
+        <item>BestMan Band Đakovo</item>
+        <item>Bolero Band Osijek</item>
+        <item>Bonus Band Osijek</item>
+        <item>Cappuccino Light Band Valpovo</item>
+        <item>DJ profesor team Osijek</item>
+        <item>Grupa Essekeri Višnjevac</item>
+        <item>GS Vox Đakovo</item>
+        <item>Jovalius band Valpovo</item>
+        <item>Krivi Spoj Osijek</item>
+        <item>Lyra Band Osijek</item>
+        <item>Quattro Band Osijek</item>
+        <item>Passage Band Osijek</item>
+        <item>Slavonia Band Đakovo</item>
+        <item>Standard Band Našice</item>
+        <item>Still Band Osijek</item>
+        <item>Sto Posto Osijek</item>
+        <item>Stravianae Band Našice</item>
+        <item>Tamburaški sastav Bosutski Bećari Vinkovci</item>
+        <item>Tamburaški sastav Dyaco Đakovo</item>
+        <item>Tamburaški sastav Džentlmeni Osijek</item>
+        <item>Tamburaški sastav Fijaker Osijek</item>
+        <item>Tamburaški sastav Garavi Vinkovci</item>
+        <item>Tamburaški sastav Kas Donji Miholjac</item>
+        <item>Tamburaški sastav Lege Osijek</item>
+        <item>Tamburaški sastav Libero Osijek</item>
+        <item>Treća Smjena Donji Miholjac</item>
+        <item>Viva Box Osijek</item>
+        <item>West Band Vinkovci</item>
+    </string-array>
+    <string-array name="gWeb">
+        <item>"www.facebook.com/allegro.cro"</item>
+        <item>"www.facebook.com/alkotestband.belisce/?fref=ts"</item>
+        <item>"www.babylon-band.com"</item>
+        <item>"www.bestmanband.eu"</item>
+        <item>"bolero-band.info"</item>
+        <item>"bonusbandosijek.com"</item>
+        <item>"www.facebook.com/cappuccinolightband"</item>
+        <item>"djprofesor.com"</item>
+        <item>"www.facebook.com/grupaessekeri"</item>
+        <item>"gs-vox-djakovo.hr"</item>
+        <item>"www.facebook.com/jovalius.band"</item>
+        <item>"www.krivispojbend.com"</item>
+        <item>"www.facebook.com/lyraband.osijek"</item>
+        <item>"www.quattro-band-osijek.com"</item>
+        <item>"passageband.com"</item>
+        <item>"www.slavoniaband.hr"</item>
+        <item>"www.standard-band.webs.com"</item>
+        <item>stillband.net</item>
+        <item>"www.sto-posto.com"</item>
+        <item>"www.facebook.com/stravianaeband.nasice"</item>
+        <item>"bosutski-becari.hr"</item>
+        <item>"www.facebook.com/TS.DYACO.HR"</item>
+        <item>"www.dzentlmeni.com"</item>
+        <item>"www.facebook.com/Tamburaški-sastav-Fijaker-365107063505368"</item>
+        <item>"www.garavi.hr"</item>
+        <item>"www.kasovci.com"</item>
+        <item>"www.facebook.com/ts.lege"</item>
+        <item>"www.facebook.com/bendlibero"</item>
+        <item>"www.facebook.com/Treća-Smjena-460814167423538"</item>
+        <item>"vivabox-band.blogspot.hr"</item>
+        <item>"www.facebook.com/westband.mikulcic"</item>
+    </string-array>
+    <string-array name="gTel">
+        <item>0995648545</item>
+        <item>0915397917</item>
+        <item>0992125274</item>
+        <item>0911549372</item>
+        <item>0915704313</item>
+        <item>0955180513</item>
+        <item>0958680041</item>
+        <item>0958125311</item>
+        <item>0915637865</item>
+        <item>098661530</item>
+        <item>0996950512</item>
+        <item>0981753410</item>
+        <item>0981842345</item>
+        <item>098712186</item>
+        <item>0912064447</item>
+        <item>0914390291</item>
+        <item>0916316214</item>
+        <item>0912191307</item>
+        <item>0916037560</item>
+        <item>09883771</item>
+        <item>098245901</item>
+        <item>0911812400</item>
+        <item>0915125701</item>
+        <item>0993457150</item>
+        <item>0998316227</item>
+        <item>0981638747</item>
+        <item>0917949296</item>
+        <item>0996894466</item>
+        <item>0915724088</item>
+        <item>0989354068</item>
+        <item>0951991049</item>
+    </string-array>
+    <string-array name="fIme">
+        <item>Anita Valpovo</item>
+        <item>Boris Perković Osijek</item>
+        <item>Danny Film Našice</item>
+        <item>Element Media Osijek</item>
+        <item>Exitus Produkcija Osijek</item>
+        <item>Foto Art Osijek</item>
+        <item>Foto Click Đakovo</item>
+        <item>Foto-color Express Đakovo</item>
+        <item>Foto Jura Đakovo</item>
+        <item>Foto Krešo Osijek</item>
+        <item>Foto Medo Vinkovci</item>
+        <item>Foto Mogoroš Valpovo</item>
+        <item>Foto Sunce Vukovar</item>
+        <item>Foto video Brzica Đakovo</item>
+        <item>Jelena Čolaković Photography Belišće</item>
+        <item>Leon Produkcija Osijek</item>
+        <item>Marinko Foto Osijek</item>
+        <item>Marko Milas Mrky Osijek</item>
+        <item>Piksel Osijek</item>
+        <item>PiM studio Osijek</item>
+        <item>Proces Darda</item>
+        <item>Produkcija Vision Osijek</item>
+        <item>Studio Effect Đakovo</item>
+        <item>Studio Inča Osijek</item>
+        <item>Studio Šarčević Belišće</item>
+        <item>Zoom Đakovo</item>
+    </string-array>
+    <string-array name="fWeb">
+        <item>foto-anita.com</item>
+        <item>borisperkovic.daportfolio.com</item>
+        <item>danny-film.wixsite.com/danny-film</item>
+        <item>elementmedia.hr</item>
+        <item>exituspro.com</item>
+        <item>fotoart.hr</item>
+        <item>facebook.com/Foto-Click-Djakovo-1689885941238006</item>
+        <item>facebook.com/Foto-Color-EXPRESS-105738096140692</item>
+        <item>foto-jura.hr</item>
+        <item>facebook.com/Foto-Krešo-754162034625034/?fref=ts</item>
+        <item>foto-medo.com</item>
+        <item>facebook.com/foto.mogoros</item>
+        <item>facebook.com/fotosunce</item>
+        <item>facebook.com/jelenacolakovic84</item>
+        <item>facebook.com/fotovideobrzica</item>
+        <item>facebook.com/leonprodukcija</item>
+        <item>marinko.org</item>
+        <item>facebook.com/mmmrky</item>
+        <item>facebook.com/piksel.foto</item>
+        <item>pim-wedding.net</item>
+        <item>fotostudioproces.hr</item>
+        <item>facebook.com/petarmandariccinema</item>
+        <item>studio-effect.hr</item>
+        <item>studioinca.com</item>
+        <item>kresimirsarcevic.com</item>
+        <item>foto-zoom.hr</item>
+    </string-array>
+    <string-array name="fTel">
+        <item>031650542</item>
+        <item>0959129627</item>
+        <item>0915164425</item>
+        <item>098423654</item>
+        <item>0913032514</item>
+        <item>031214101</item>
+        <item>098801722</item>
+        <item>098493218</item>
+        <item>0919437942</item>
+        <item>031201200</item>
+        <item>0989377203</item>
+        <item>031651704</item>
+        <item>032444004</item>
+        <item>098805425</item>
+        <item>0911696728</item>
+        <item>0915008866</item>
+        <item>098577424</item>
+        <item>0951965355</item>
+        <item>0958551468</item>
+        <item>0911999035</item>
+        <item>0959020732</item>
+        <item>0981902419</item>
+        <item>0959400400</item>
+        <item>0912731966</item>
+        <item>0989728047</item>
+        <item>031811400</item>
+    </string-array>
+    <string-array name="cIme">
+        <item>Abutilon Osijek</item>
+        <item>Agava Osijek</item>
+        <item>AGMI Đakovo</item>
+        <item>Aloe Đakovo</item>
+        <item>Anemona Đakovo</item>
+        <item>Cvjetić Nuštar</item>
+        <item>Cvjetić Tovarnik</item>
+        <item>Dalia Valpovo</item>
+        <item>Denis Vinkovci</item>
+        <item>Dvorac Osijek</item>
+        <item>Egzotika Čepin</item>
+        <item>Exclusive Vukovar</item>
+        <item>Flamingo Vinkovci</item>
+        <item>Florami 2 Osijek</item>
+        <item>Fontana Vukovar</item>
+        <item>Gardenija Osijek</item>
+        <item>Gladiola Vinkovci</item>
+        <item>Gladiola Vukovar</item>
+        <item>Hortus Osijek</item>
+        <item>Iris Ivankovo</item>
+        <item>Iris Vinkovci</item>
+        <item>Kamen-Štimac Đakovo</item>
+        <item>Lana Antunovac</item>
+        <item>Lavanda Đakovo</item>
+        <item>Lotus Osijek</item>
+        <item>Ljubičica Osijek</item>
+        <item>Maja Osijek</item>
+        <item>Marta Đakovo</item>
+        <item>Mimoza Osijek</item>
+        <item>Mirta Vinkovci</item>
+        <item>Mozaik Osijek</item>
+        <item>Nena Otok</item>
+        <item>Orhideja Valpovo</item>
+        <item>Palma Đakovo</item>
+        <item>Palma - Jukić Vinkovci</item>
+        <item>Palma - Jukić Vukovar</item>
+        <item>Stella Đakovo</item>
+        <item>Tanja Vinkovci</item>
+        <item>Tea Višnjevac</item>
+        <item>Valentina Ivankovo</item>
+    </string-array>
+    <string-array name="cAdr">
+        <item>Crkvena 134, Osijek</item>
+        <item>Kozjačka 33, Osijek</item>
+        <item>Ulica Biskupa Antuna Mandića bb,  Đakovo</item>
+        <item>Biskupa A. Mandića BB, Đakovo</item>
+        <item>Ljudevita Gaja 40, Đakovo</item>
+        <item>Križni put 65, Nuštar</item>
+        <item>Vlč. Ivana Burika 1, Tovarnik</item>
+        <item>Osječka 8, Valpovo</item>
+        <item>A.K.Miočića 98, Vinkovci</item>
+        <item>Drinska 2, Osijek</item>
+        <item>Kralja Tomislava 1A, Čepin</item>
+        <item>Hrastik 15, Vukovar</item>
+        <item>Duga 34, Vinkovci</item>
+        <item>Trg bana Josipa Jelačića BB, Osijek</item>
+        <item>Zagrebačka 7, Vukovar</item>
+        <item>Martina Divalta 111, Osijek</item>
+        <item>Dr.F.Tuđmana 30, Vukovar</item>
+        <item>Andrije Kačića Miošića 44, Vinkovci</item>
+        <item>Drinska 2, Osijek</item>
+        <item>Grobljanska 18, Ivankovo</item>
+        <item>Andrije Kačića Miošića BB, Vinkovci</item>
+        <item>Stjepana Radića 28, Đakovo</item>
+        <item>Hrvatske Republike 6A, Antunovac</item>
+        <item>Vladimira Nazora 28, Đakovo</item>
+        <item>A. Reisnera 119, Osijek</item>
+        <item>Trg bana Josipa Jelačića BB, Osijek</item>
+        <item>Svete Ane 88, Osijek</item>
+        <item>Franje Račkog 95, Đakovo</item>
+        <item>Županijska ulica 34, Osijek</item>
+        <item>Glagoljaška 38, Vinkovci</item>
+        <item>Trpimirova bb, Osijek</item>
+        <item>Josipa Jurja Strossmayera 27, Otok</item>
+        <item>Stossmayerova 1a, Valpovo</item>
+        <item>B. Jelačića 33, Đakovo</item>
+        <item>Andrije Kacica Miošica 30, Vinkovci</item>
+        <item>Novo groblje BB, Vukovar</item>
+        <item>Bana Josipa Jelačića 44, Đakovo</item>
+        <item>Andrije Kacica Miošica 32, Vinkovci</item>
+        <item>Ulica bana Josipa Jelačića 9A, Višnjevac</item>
+        <item>Željeznička 17a, Ivankovo</item>
+    </string-array>
+    <string-array name="cTel">
+        <item>031504342</item>
+        <item>031300071</item>
+        <item>0317818528</item>
+        <item>0989901129</item>
+        <item>031812484</item>
+        <item>0989529968</item>
+        <item>0989529968</item>
+        <item>031495775</item>
+        <item>032303200</item>
+        <item>031274854</item>
+        <item>031381950</item>
+        <item>0996963553</item>
+        <item>032331770</item>
+        <item>031502626</item>
+        <item>032410097</item>
+        <item>031508539</item>
+        <item>032303262</item>
+        <item>032441218</item>
+        <item>031274854</item>
+        <item>0989706978</item>
+        <item>032303556</item>
+        <item>098438707</item>
+        <item>098853351</item>
+        <item>031812960</item>
+        <item>0981953388</item>
+        <item>031502400</item>
+        <item>031373099</item>
+        <item>0913856179</item>
+        <item>031202400</item>
+        <item>032331440</item>
+        <item>031209640</item>
+        <item>0989216756</item>
+        <item>031651562</item>
+        <item>031813033</item>
+        <item>032410668</item>
+        <item>032303280</item>
+        <item>031812699</item>
+        <item>032303200</item>
+        <item>031351622</item>
+        <item>098349561</item>
+    </string-array>
+
+
+</resources>

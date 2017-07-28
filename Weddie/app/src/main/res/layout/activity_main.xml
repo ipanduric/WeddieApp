@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home_screen"
+    tools:context="com.rma.ipanduric.weddie.MainActivity">
+
+    <Button
+        android:id="@+id/bVidiSale"
+        android:layout_width="@dimen/bWidth"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bsala"
+        android:text="@string/VidiSale"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bTextColor"
+        />
+
+    <Button
+        android:id="@+id/bIzracunajPotrebe"
+        android:layout_width="@dimen/bWidth"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bizracunaj"
+        android:text="@string/IzracunajPotrebe"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/bVidiSale"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bTextColor"/>
+    <Button
+        android:id="@+id/bSastaviCheckListu"
+        android:layout_width="@dimen/bWidth"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bsastavicl"
+        android:text="@string/SastaviChecklist"
+        android:layout_below="@id/bIzracunajPotrebe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/bTextColor"/>
+
+    <Button
+        android:id="@+id/bVidiCheckListu"
+        android:layout_width="@dimen/bWidth"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bvidicl"
+        android:text="@string/VidiCheckList"
+        android:layout_below="@+id/bSastaviCheckListu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/bTextColor"/>
+
+    <Button
+        android:id="@+id/bDodajGoste"
+        android:layout_width="@dimen/bWidth"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgosti"
+        android:text="@string/DodajGoste"
+        android:layout_below="@+id/bVidiCheckListu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/bTextColor"/>
+
+
+    <Button
+        android:id="@+id/bGlazba"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bglazba"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/bTextColor"
+        android:layout_below="@+id/bDodajGoste"
+        android:layout_alignLeft="@+id/bDodajGoste"
+        android:layout_alignStart="@+id/bDodajGoste"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/bFoto"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bfotografija"
+        android:textColor="@color/bTextColor"
+        android:layout_alignBaseline="@+id/bGlazba"
+        android:layout_alignBottom="@+id/bGlazba"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bCvijece"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bcvijece"
+        android:textColor="@color/bTextColor"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@+id/bFoto"
+        android:layout_alignBottom="@+id/bFoto"
+        android:layout_alignRight="@+id/bDodajGoste"
+        android:layout_alignEnd="@+id/bDodajGoste" />
+</RelativeLayout>
