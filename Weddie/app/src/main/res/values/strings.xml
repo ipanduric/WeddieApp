@@ -12,6 +12,15 @@
     <string name="Web">Web mjesto:</string>
     <string name="Tel">Broj telefona:</string>
     <string name="Adr">Adresa:</string>
+    <string name="Podsjetnik">ZADACI</string>
+    <string name="nema_zadataka">Nemate zadataka</string>
+    <string name="NazivZadatka">Naziv zadatka</string>
+    <string name="Opis">Opis:</string>
+    <string name="datum">Datum:</string>
+    <string name="unesiteDatum">unesite datum</string>
+    <string name="unesiteVrijeme">unesite vrijeme</string>
+    <string name="odaberiteVrijeme">odaberite vrijeme</string>
+    <string name="potvrdi">POTVRDI</string>
     <string-array name="gIme">
         <item>Allegro Band Osijek</item>
         <item>Alkotest Band Belišće</item>

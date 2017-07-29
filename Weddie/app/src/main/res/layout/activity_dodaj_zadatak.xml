@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rma.ipanduric.weddie.DodajZadatakActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NazivZadatka" />
+        <EditText
+            android:id="@+id/etNaziv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="cvijeće"
+            android:gravity="left"
+            />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Opis" />
+
+        <EditText
+            android:id="@+id/etOpis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lines="5"
+            android:hint="nazvati cvjećarnicu"
+            android:gravity="top"
+            />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datum" />
+        <Button
+            android:id="@+id/bDatum"
+            android:layout_height="wrap_content"
+            android:text="@string/unesiteDatum"
+            android:layout_width="fill_parent"
+            />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unesiteVrijeme" />
+        <Button
+            android:id="@+id/bVrijeme"
+            android:layout_height="wrap_content"
+            android:text="@string/odaberiteVrijeme"
+            android:layout_width="fill_parent"
+            />
+
+        <Button
+            android:id="@+id/bPotvrdi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/potvrdi"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</ScrollView>

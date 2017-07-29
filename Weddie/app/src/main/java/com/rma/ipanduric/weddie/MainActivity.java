@@ -9,14 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button bVidiSale;
-    Button bIzracunajPotrebe;
-    Button bGlazba;
-    Button bFoto;
-    Button bCvijece;
-    Button bSastaviCheckList;
-    Button bVidiCheckList;
-    Button bDodajGoste;
+    Button bVidiSale, bIzracunajPotrebe, bGlazba, bFoto, bCvijece, bSastaviCheckList, bVidiCheckList, bPodsjetnik,bDodajGoste;
     Context context;
 
     @Override
@@ -35,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bDodajGoste = (Button) findViewById(R.id.bDodajGoste);
         bSastaviCheckList = (Button) findViewById(R.id.bSastaviCheckListu);
         bVidiCheckList = (Button) findViewById(R.id.bVidiCheckListu);
+        bPodsjetnik = (Button) findViewById(R.id.bPodsjetnik);
         bVidiSale.setOnClickListener(this);
         bIzracunajPotrebe.setOnClickListener(this);
         bGlazba.setOnClickListener(this);
@@ -42,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bCvijece.setOnClickListener(this);
         bSastaviCheckList.setOnClickListener(this);
         bVidiCheckList.setOnClickListener(this);
+        bPodsjetnik.setOnClickListener(this);
 
     }
 
@@ -62,6 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bCvijece:
                 intent.setClass(this,CvijeceActivity.class);
                 break;
+            case R.id.bPodsjetnik:
+                intent.setClass(this,ZadaciActivity.class);
+                break;
+
         }
         this.startActivity(intent);
     }

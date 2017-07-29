@@ -5,4 +5,5 @@
     <dimen name="bWidth">270sp</dimen>
     <dimen name="bSearchDimen">45sp</dimen>
     <dimen name="marginSearch">130sp</dimen>
+    <dimen name="padding">5dp</dimen>
 </resources>
