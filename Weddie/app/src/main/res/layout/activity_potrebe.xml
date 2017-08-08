@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlid"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    tools:context="com.rma.ipanduric.weddie.PotrebeActivity">
+
+    <EditText
+        android:id="@+id/etBroj"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="broj gosti"
+        />
+
+    <Button
+        android:id="@+id/bIzracunaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izračunaj"
+        android:layout_toRightOf="@id/etBroj"/>
+
+    <Button
+        android:id="@+id/bSpremi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bIzracunaj"
+        android:text="SPREMI"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/lvPotrebe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBroj"
+        android:divider="@android:color/transparent"
+        >
+    </ListView>
+
+</RelativeLayout>

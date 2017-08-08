@@ -5,17 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.rma.ipanduric.weddie.ZadaciActivity">
+    tools:context="com.rma.ipanduric.weddie.GostiActivity">
 
     <ListView
-        android:id="@+id/lvZadaci"
-        android:layout_width="fill_parent"
+        android:id="@+id/lvGosti"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
         android:layout_margin="@dimen/padding"
         android:padding="@dimen/padding"
-        android:layout_height="450dp"/>
+    </ListView>
 
-    <TextView android:id="@+id/tvNoZad"
+    <TextView android:id="@+id/tvNoGost"
         android:layout_width="match_parent"
         android:layout_marginTop="80dp"
         android:layout_height="wrap_content"
@@ -25,19 +25,18 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:visibility="gone"
-        android:text="@string/nema_zadataka"/>
-<Button
-    android:layout_width="50sp"
-    android:layout_height="wrap_content"
-    android:id="@+id/bdodajZadatak"
-    android:background="@drawable/dodaj"
-    android:layout_below="@id/lvZadaci"
-    android:layout_marginBottom="20dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:layout_marginRight="20dp"
-    android:layout_marginEnd="20dp"/>
+        android:text="@string/nema_gosti"/>
 
+    <Button
+        android:id="@+id/bDodajGosta"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dodaj"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
 
 </RelativeLayout>

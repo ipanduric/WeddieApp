@@ -21,6 +21,18 @@
     <string name="unesiteVrijeme">unesite vrijeme</string>
     <string name="odaberiteVrijeme">odaberite vrijeme</string>
     <string name="potvrdi">POTVRDI</string>
+    <string name="nema_gosti">Niste dodali nijednog gosta</string>
+    <string name="dodajteGoste">Dodajte goste</string>
+    <string name="Prezime">Prezime:</string>
+    <string name="odaberiteKategoriju">Odaberite kategoriju:</string>
+    <string name="Ime">Ime/imena gosta</string>
+    <string name="brojGosti">Broj gosti:</string>
+    <string name="Dodaj">DODAJ</string>
+    <string-array name="sKategorije">
+        <item>Obitelj</item>
+        <item>Prijatelji</item>
+        <item>Ostali</item>
+    </string-array>
     <string-array name="gIme">
         <item>Allegro Band Osijek</item>
         <item>Alkotest Band Belišće</item>

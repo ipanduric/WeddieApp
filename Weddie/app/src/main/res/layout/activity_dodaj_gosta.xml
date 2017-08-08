@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rma.ipanduric.weddie.DodajGostaActivity">
+    <TextView
+        android:id="@+id/tvDodajteGoste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dodajteGoste"
+        android:textSize="20px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvKategorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/odaberiteKategoriju"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tvDodajteGoste"/>
+
+    <Spinner
+        android:id="@+id/sKategorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvKategorija"
+        android:entries="@array/sKategorije"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tvgPrezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Prezime"
+        android:layout_below="@id/sKategorija"/>
+
+    <EditText
+        android:id="@+id/etgPrezime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvgPrezime"/>
+
+    <TextView
+        android:id="@+id/tvgIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ime"
+        android:layout_below="@id/etgPrezime"/>
+
+    <EditText
+        android:id="@+id/etgIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvgIme"/>
+
+    <TextView
+        android:id="@+id/tvBroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brojGosti"
+        android:layout_below="@id/etgIme"/>
+
+    <EditText
+        android:id="@+id/etBroj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etgIme"
+        android:layout_toRightOf="@id/tvBroj"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/bgDodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Dodaj"
+        android:layout_below="@id/tvBroj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

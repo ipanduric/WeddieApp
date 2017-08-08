@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bSastaviCheckList.setOnClickListener(this);
         bVidiCheckList.setOnClickListener(this);
         bPodsjetnik.setOnClickListener(this);
+        bDodajGoste.setOnClickListener(this);
 
     }
 
@@ -59,6 +60,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bPodsjetnik:
                 intent.setClass(this,ZadaciActivity.class);
+                break;
+            case R.id.bDodajGoste:
+                intent.setClass(this, GostiActivity.class);
+                break;
+            case R.id.bIzracunajPotrebe:
+                intent.setClass(this, PotrebeActivity.class);
                 break;
 
         }

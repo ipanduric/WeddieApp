@@ -14,6 +14,11 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
 
     <application
         android:allowBackup="true"
@@ -52,7 +57,11 @@
         <activity android:name=".CvDetailsActivity" />
         <activity android:name=".ZadaciActivity" />
         <activity android:name=".ZadatakItem" />
-        <activity android:name=".DodajZadatakActivity"></activity>
+        <activity android:name=".DodajZadatakActivity" />
+        <activity android:name=".GostiActivity" />
+        <activity android:name=".GostItem" />
+        <activity android:name=".DodajGostaActivity" />
+        <activity android:name=".PotrebeActivity"></activity>
     </application>
 
 </manifest>

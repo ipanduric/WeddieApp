@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rma.ipanduric.weddie.GostItem">
+
+    <TextView
+        android:id="@+id/tvBrojGosti"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:hint="3"
+        android:gravity="right"
+        android:layout_toRightOf="@id/tvIme"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvPrezime"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tvBrojGosti"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:hint="prezime"
+        android:layout_alignLeft="@+id/tvIme"
+        android:layout_alignStart="@+id/tvIme" />
+
+    <TextView
+        android:id="@+id/tvIme"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tvPrezime"
+        android:hint="@string/Ime"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/tvKategorija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="kategorija"
+        android:gravity="left"
+        android:layout_below="@id/tvIme"
+        android:layout_toLeftOf="@+id/tvBrojGosti" />
+
+</RelativeLayout>

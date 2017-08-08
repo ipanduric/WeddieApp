@@ -60,7 +60,7 @@ public class GlazbaAdapter extends BaseAdapter {
         return convertView;
     }
 
-    private class ViewHolder {
+    class ViewHolder {
 
         TextView tvGlazbaIme;
 
