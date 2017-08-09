@@ -6,6 +6,7 @@ import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -15,16 +16,16 @@ import android.widget.TextView;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class GostiActivity extends AppCompatActivity implements View.OnClickListener{
+public class GostiActivity extends AppCompatActivity implements View.OnClickListener {
+
 
     public static final  String OUTPUT_KATEGORIJA = "kategorija";
     public static final  String OUTPUT_PREZIME = "prezime";
     public static final  String OUTPUT_IME = "ime";
     public static final  String OUTPUT_BROJ = "broj";
-    public static final int REQUEST_CODE_GOST = 0;
+    public static final int REQUEST_CODE_GOST = 1;
 
     ListView lvGosti;
-    TextView tvNoGosti;
     GostiAdapter gostiAdapter;
     Button bDodaj;
 
@@ -37,7 +38,6 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
 
     private void SetUpUI() {
         lvGosti = (ListView) findViewById(R.id.lvGosti);
-        tvNoGosti = (TextView) findViewById(R.id.tvNoGost);
         bDodaj = (Button) findViewById(R.id.bDodajGosta);
         bDodaj.setOnClickListener(this);
 
@@ -50,15 +50,11 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
 
     private void SetUpLV() {
 
-        if (Database.getInstance(this).getAllGosti().isEmpty()) {
-            tvNoGosti.setVisibility(View.VISIBLE);
 
-        } else {
             ArrayList<GostItem> gosti = Database.getInstance(this).getAllGosti();
-            tvNoGosti.setVisibility(View.GONE);
-            gostiAdapter = new GostiAdapter(gosti, this);
+            gostiAdapter = new GostiAdapter(gosti);
             lvGosti.setAdapter(gostiAdapter);
-        }
+
 
         lvGosti.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -101,17 +97,24 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_GOST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+        if (requestCode == REQUEST_CODE_GOST && resultCode == RESULT_OK) {
 
             String kategorija = data.getStringExtra(OUTPUT_KATEGORIJA);
             String prezime = data.getStringExtra(OUTPUT_PREZIME);
             String ime = data.getStringExtra(OUTPUT_IME);
             String broj = data.getStringExtra(OUTPUT_BROJ);
+            ArrayList<GostItem> gosti = new ArrayList<>();
             GostItem gost = new GostItem(kategorija, prezime, ime, broj);
             Database.getInstance(getApplicationContext()).dodajGosta(gost);
             gostiAdapter.dodajNovogGosta(new GostItem(kategorija, prezime, ime, broj));
+
         }
     }
 
 
 }
+
+
+
+
+

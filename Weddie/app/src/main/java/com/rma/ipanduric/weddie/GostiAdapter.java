@@ -17,13 +17,11 @@ import java.util.List;
 
 public class GostiAdapter extends BaseAdapter {
 
-    private List<GostItem> mGost;
-    Context context;
+    private ArrayList<GostItem> mGost;
 
-    public GostiAdapter(List<GostItem> gosti, Context context)
+    public GostiAdapter(ArrayList<GostItem> gosti)
     {
         this.mGost = gosti;
-        this.context = context;
     }
 
 
@@ -45,44 +43,44 @@ public class GostiAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder taskViewHolder;
+        ViewHolder gostViewHolder;
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             convertView = inflater.inflate(R.layout.items_gosti, parent, false);
-            taskViewHolder = new ViewHolder(convertView);
-            convertView.setTag(taskViewHolder);
+            gostViewHolder = new ViewHolder(convertView);
+            convertView.setTag(gostViewHolder);
         } else {
-            taskViewHolder = (ViewHolder) convertView.getTag();
+            gostViewHolder = (ViewHolder) convertView.getTag();
         }
 
         GostItem gost = this.mGost.get(position);
-        taskViewHolder.tvPrezime.setText(gost.getgPrezime());
-        taskViewHolder.tvIme.setText(gost.getgIme());
-        taskViewHolder.tvKategorija.setText(gost.getgKategorija());
-        taskViewHolder.tvBroj.setText(gost.getgBroj());
+        gostViewHolder.tvPrezime.setText(gost.getgPrezime());
+        gostViewHolder.tvIme.setText(gost.getgIme());
+        gostViewHolder.tvKategorija.setText(gost.getgKategorija());
+        gostViewHolder.tvBroj.setText(gost.getgBroj());
         return convertView;
     }
 
     public void dodajNovogGosta (GostItem gost) {
-        mGost.add(gost);
-        notifyDataSetChanged();
+        this.mGost.add(gost);
+        this.notifyDataSetChanged();
     }
 
     public void deleteAt(int position) {
-        mGost.remove(position);
-        notifyDataSetChanged();
+        this.mGost.remove(position);
+        this.notifyDataSetChanged();
     }
 
 
     private class ViewHolder {
 
-        TextView tvPrezime, tvIme, tvKategorija, tvBroj;
+        public TextView tvPrezime, tvIme, tvKategorija, tvBroj;
 
-        public ViewHolder(View taskView) {
-            tvKategorija = (TextView) taskView.findViewById(R.id.tvKategorija);
-            tvPrezime = (TextView) taskView.findViewById(R.id.tvPrezime);
-            tvIme = (TextView) taskView.findViewById(R.id.tvIme);
-            tvBroj = (TextView) taskView.findViewById(R.id.tvBroj);
+        public ViewHolder(View gostView) {
+            tvKategorija = (TextView) gostView.findViewById(R.id.tvaKategorija);
+            tvPrezime = (TextView) gostView.findViewById(R.id.tvaPrezime);
+            tvIme = (TextView) gostView.findViewById(R.id.tvaIme);
+            tvBroj = (TextView) gostView.findViewById(R.id.tvaBrojGosti);
         }
 
     }

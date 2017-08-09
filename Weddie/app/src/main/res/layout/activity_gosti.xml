@@ -15,17 +15,7 @@
         android:padding="@dimen/padding"
     </ListView>
 
-    <TextView android:id="@+id/tvNoGost"
-        android:layout_width="match_parent"
-        android:layout_marginTop="80dp"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:visibility="gone"
-        android:text="@string/nema_gosti"/>
+
 
     <Button
         android:id="@+id/bDodajGosta"

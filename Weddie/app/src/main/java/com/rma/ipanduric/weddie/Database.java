@@ -18,6 +18,7 @@ public class Database extends SQLiteOpenHelper {
 
     private static Database mDatabase = null;
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE_ZACACI);
@@ -29,6 +30,7 @@ public class Database extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(DROP_TABLE_ZADACI);
         db.execSQL(DROP_TABLE_GOSTI);
+        this.onCreate(db);
     }
 
     static final String CREATE_TABLE_ZACACI = "CREATE TABLE " + Schema.TABLE_ZADACI +
@@ -117,7 +119,7 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Schema.IME, gostItem.getgIme());
         contentValues.put(Schema.BROJ, gostItem.getgBroj());
         SQLiteDatabase writableDatabase = this.getWritableDatabase();
-        writableDatabase.insert(Schema.TABLE_GOSTI, Schema.KATEGORIJA,contentValues);
+        writableDatabase.insert(Schema.TABLE_GOSTI, Schema.ID, contentValues);
         writableDatabase.close();
     }
 
