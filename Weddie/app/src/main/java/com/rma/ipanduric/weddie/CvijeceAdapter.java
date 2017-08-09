@@ -1,6 +1,7 @@
 package com.rma.ipanduric.weddie;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,19 +45,26 @@ class CvijeceAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        View v=convertView;
         ViewHolder cvijeceVH;
-        if (convertView == null) {
+        if (v == null) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-            convertView = inflater.inflate(R.layout.item_cvijece, parent, false);
-            cvijeceVH = new ViewHolder(convertView);
-            convertView.setTag(cvijeceVH);
+            v = inflater.inflate(R.layout.item_cvijece, parent, false);
+            cvijeceVH = new ViewHolder(v);
+            v.setTag(cvijeceVH);
         } else {
-            cvijeceVH = (CvijeceAdapter.ViewHolder) convertView.getTag();
+            cvijeceVH = (CvijeceAdapter.ViewHolder) v.getTag();
         }
 
         CvijeceItem cvijece = this.mCvijece.get(position);
         cvijeceVH.tvCvijeceIme.setText(cvijece.getcIme());
-        return convertView;
+
+        if (position % 2 == 1) {
+            v.setBackgroundColor(Color.WHITE);
+        } else {
+            v.setBackgroundColor(Color.parseColor("#F5ECCE"));
+        }
+        return v;
     }
 
     private class ViewHolder {

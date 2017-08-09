@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class GostiActivity extends AppCompatActivity implements View.OnClickListener{
@@ -48,8 +49,10 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
 
 
     private void SetUpLV() {
+
         if (Database.getInstance(this).getAllGosti().isEmpty()) {
             tvNoGosti.setVisibility(View.VISIBLE);
+
         } else {
             ArrayList<GostItem> gosti = Database.getInstance(this).getAllGosti();
             tvNoGosti.setVisibility(View.GONE);

@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bIzracunajPotrebe:
                 intent.setClass(this, PotrebeActivity.class);
                 break;
-
         }
         this.startActivity(intent);
     }

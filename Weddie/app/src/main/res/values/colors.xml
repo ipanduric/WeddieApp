@@ -5,4 +5,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="bTextColor">#ffc63f</color>
     <color name="black">#000</color>
+    <color name="lv">#F2F5A9</color>
+    <color name="accent_material_light_1">#f1a90c</color>
+
+    <array name="glazba_backgrounds">
+        <item name="prvired">#F2F5A9</item>
+        <item name="drugired">#F5F6CE</item>
+    </array>
 </resources>

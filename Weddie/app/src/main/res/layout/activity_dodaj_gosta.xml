@@ -6,21 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rma.ipanduric.weddie.DodajGostaActivity">
-    <TextView
-        android:id="@+id/tvDodajteGoste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dodajteGoste"
-        android:textSize="20px"
-        android:textStyle="bold"/>
+
 
     <TextView
         android:id="@+id/tvKategorija"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/odaberiteKategoriju"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/tvDodajteGoste"/>
+        android:textSize="@dimen/zadtekst"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
+        />
 
     <Spinner
         android:id="@+id/sKategorija"
@@ -28,6 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvKategorija"
         android:entries="@array/sKategorije"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
         >
 
     </Spinner>
@@ -37,33 +35,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Prezime"
+        android:textSize="@dimen/zadtekst"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
         android:layout_below="@id/sKategorija"/>
 
     <EditText
         android:id="@+id/etgPrezime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvgPrezime"/>
+        android:layout_below="@id/tvgPrezime"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"/>
 
     <TextView
         android:id="@+id/tvgIme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Ime"
-        android:layout_below="@id/etgPrezime"/>
+        android:textSize="@dimen/zadtekst"
+        android:layout_below="@id/etgPrezime"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"/>
 
     <EditText
         android:id="@+id/etgIme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvgIme"/>
+        android:layout_below="@id/tvgIme"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"/>
 
     <TextView
         android:id="@+id/tvBroj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/brojGosti"
-        android:layout_below="@id/etgIme"/>
+        android:textSize="@dimen/zadtekst"
+        android:layout_below="@id/etgIme"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"/>
 
     <EditText
         android:id="@+id/etBroj"
@@ -71,15 +82,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etgIme"
         android:layout_toRightOf="@id/tvBroj"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginLeft="@dimen/zadmargina"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_marginBottom="@dimen/zadmargina"
+        android:layout_alignRight="@+id/bgDodaj"
+        android:layout_alignEnd="@+id/bgDodaj" />
 
     <Button
         android:id="@+id/bgDodaj"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="@string/Dodaj"
         android:layout_below="@id/tvBroj"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="60sp"
+        android:layout_width="@dimen/bodaberi"
+        android:layout_gravity="center"/>
 
 </RelativeLayout>

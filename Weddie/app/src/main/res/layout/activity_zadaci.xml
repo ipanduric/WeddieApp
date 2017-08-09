@@ -13,7 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_margin="@dimen/padding"
         android:padding="@dimen/padding"
-        android:layout_height="450dp"/>
+        android:layout_height="500sp"/>
 
     <TextView android:id="@+id/tvNoZad"
         android:layout_width="match_parent"
@@ -27,17 +27,19 @@
         android:visibility="gone"
         android:text="@string/nema_zadataka"/>
 <Button
-    android:layout_width="50sp"
-    android:layout_height="wrap_content"
+
     android:id="@+id/bdodajZadatak"
-    android:background="@drawable/dodaj"
-    android:layout_below="@id/lvZadaci"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button"
+    android:layout_width="@dimen/bodaberi"
+    android:text="@string/Dodaj"
     android:layout_marginBottom="20dp"
     android:layout_alignParentBottom="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
     android:layout_marginRight="20dp"
-    android:layout_marginEnd="20dp"/>
+    android:layout_marginEnd="20dp"
+   />
 
 
 </RelativeLayout>

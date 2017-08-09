@@ -1,6 +1,8 @@
 package com.rma.ipanduric.weddie;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.AnimatedStateListDrawable;
 import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,19 +47,27 @@ public class GlazbaAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        View v=convertView;
         ViewHolder glazbaVH;
-        if (convertView == null) {
+        if (v == null) {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-            convertView = inflater.inflate(R.layout.items_glazba, parent, false);
-            glazbaVH = new ViewHolder(convertView);
-            convertView.setTag(glazbaVH);
+            v = inflater.inflate(R.layout.items_glazba, parent, false);
+            glazbaVH = new ViewHolder(v);
+            v.setTag(glazbaVH);
         } else {
-            glazbaVH = (ViewHolder) convertView.getTag();
-        }
+            glazbaVH = (ViewHolder) v.getTag();
 
+        }
         GlazbaItem glazba = this.mGlazba.get(position);
         glazbaVH.tvGlazbaIme.setText(glazba.getgIme());
-        return convertView;
+
+        if (position % 2 == 1) {
+            v.setBackgroundColor(Color.WHITE);
+        } else {
+            v.setBackgroundColor(Color.parseColor("#F5ECCE"));
+        }
+
+        return v;
     }
 
     class ViewHolder {
@@ -66,6 +76,8 @@ public class GlazbaAdapter extends BaseAdapter {
 
         public ViewHolder(View glazbaView) {
             tvGlazbaIme = (TextView) glazbaView.findViewById(R.id.tvGlazbaIme);
+
+
         }
     }
 

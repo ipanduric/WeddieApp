@@ -26,6 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etfSearch"
+        android:layout_margin="@dimen/padding"
+        android:padding="@dimen/padding"
         android:divider="@android:color/transparent"
         android:dividerHeight="4dp"
         >

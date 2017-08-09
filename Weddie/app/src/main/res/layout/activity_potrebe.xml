@@ -17,20 +17,30 @@
         android:id="@+id/etBroj"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:hint="broj gosti"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
+        android:hint="Broj osoba"
+        android:inputType="number"
         />
 
     <Button
         android:id="@+id/bIzracunaj"
-        android:layout_width="wrap_content"
+        android:layout_width="90sp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
         android:text="Izračunaj"
-        android:layout_toRightOf="@id/etBroj"/>
+        android:layout_toRightOf="@id/etBroj"
+        />
 
     <Button
         android:id="@+id/bSpremi"
-        android:layout_width="wrap_content"
+        android:layout_width="90sp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
         android:layout_toRightOf="@id/bIzracunaj"
         android:text="SPREMI"
         android:visibility="invisible"/>
@@ -39,6 +49,9 @@
         android:id="@+id/lvPotrebe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zadmargina"
+        android:layout_margin="@dimen/zadmargina"
+        android:padding="@dimen/padding"
         android:layout_below="@+id/etBroj"
         android:divider="@android:color/transparent"
         >

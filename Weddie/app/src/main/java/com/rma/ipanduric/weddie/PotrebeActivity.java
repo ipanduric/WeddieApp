@@ -48,9 +48,6 @@ public class PotrebeActivity extends AppCompatActivity implements View.OnClickLi
     private String[] naziv = {"Prasetina", "Janjetina"};
     private String[] jedinica = {"kom", "kom"};
 
-    public static final String NAZIV = "naziv";
-    public static final String REZULTAT = "rezultat";
-    public static final String JEDINICA = "jedinica";
 
 
     @Override
@@ -66,15 +63,18 @@ public class PotrebeActivity extends AppCompatActivity implements View.OnClickLi
 
     }
 
-
-
     @Override
     public void onClick(View v) {
 
         switch (v.getId()) {
             case R.id.bIzracunaj: {
 
-                if (!(etBroj.getText().toString().isEmpty())) {
+                if ((etBroj.getText().toString().isEmpty()))
+                {
+                    Toast.makeText(this, "Unesite broj osoba!", Toast.LENGTH_SHORT).show();
+                }
+
+                else if  (!(etBroj.getText().toString().isEmpty())) {
                     String no = etBroj.getText().toString();       //this will get a string
                     float broj = Float.parseFloat(no);
                     float[] rezultat = {Math.round(broj / 40), Math.round(broj / 60)};
@@ -87,8 +87,9 @@ public class PotrebeActivity extends AppCompatActivity implements View.OnClickLi
 
                     potrebeAdapter = new PotrebeAdapter(this, potrebe);
                     lvPotrebe.setAdapter(potrebeAdapter);
+                    bSpremi.setVisibility(View.VISIBLE);
+
                 }
-                bSpremi.setVisibility(View.VISIBLE);
             }
             break;
 
@@ -100,6 +101,8 @@ public class PotrebeActivity extends AppCompatActivity implements View.OnClickLi
             }
 
         }
+
+        //http://grishma102.blogspot.hr/2015/04/capture-whole-listview-and-create-image.html
 
     public void getWholeListViewItemsToBitmap(ListView p_ListView) {
         ListView listview = p_ListView;
@@ -155,7 +158,7 @@ public class PotrebeActivity extends AppCompatActivity implements View.OnClickLi
             String filePath = sdIconStorageDir.toString() + File.separator + filename;
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             BufferedOutputStream bos = new BufferedOutputStream(fileOutputStream);
-            Toast.makeText(this, "Image Saved at----" + filePath, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Slika dostupna u mapi: " + filePath, Toast.LENGTH_LONG).show();
             // choose another format if PNG doesn't suit you
             imageData.compress(Bitmap.CompressFormat.JPEG, 90, bos);
             bos.flush();

@@ -26,7 +26,7 @@
         android:id="@+id/bPodsjetnik"
         android:layout_width="@dimen/bWidth"
         android:layout_height="wrap_content"
-        android:background="@drawable/bvidicl"
+        android:background="@drawable/bpodsjetnik"
         android:text="@string/Podsjetnik"
         android:textColor="@color/bTextColor"
         android:layout_below="@id/bIzracunajPotrebe"
@@ -69,16 +69,16 @@
 
     <Button
         android:id="@+id/bVidiSale"
-        android:layout_width="50sp"
+        android:layout_width="55sp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bglazba"
+        android:background="@drawable/bsala"
         android:layout_below="@id/bDodajGoste"
         android:layout_marginTop="18dp"
         android:layout_marginLeft="40dp"/>
 
     <Button
         android:id="@+id/bGlazba"
-        android:layout_width="50sp"
+        android:layout_width="55sp"
         android:layout_height="wrap_content"
         android:background="@drawable/bglazba"
         android:textColor="@color/bTextColor"
@@ -89,7 +89,7 @@
 
     <Button
         android:id="@+id/bFoto"
-        android:layout_width="50sp"
+        android:layout_width="55sp"
         android:layout_height="wrap_content"
         android:background="@drawable/bfotografija"
         android:textColor="@color/bTextColor"
@@ -99,7 +99,7 @@
 
     <Button
         android:id="@+id/bCvijece"
-        android:layout_width="50sp"
+        android:layout_width="55sp"
         android:layout_height="wrap_content"
         android:background="@drawable/bcvijece"
         android:textColor="@color/bTextColor"

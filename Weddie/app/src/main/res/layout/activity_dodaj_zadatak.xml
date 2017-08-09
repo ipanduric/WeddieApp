@@ -9,58 +9,80 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        >
 
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/zadtekst"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:layout_margin="@dimen/zadmargina"
             android:text="@string/NazivZadatka" />
+
         <EditText
             android:id="@+id/etNaziv"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="cvijeće"
+            android:layout_margin="@dimen/zadmargina"
+            android:hint="Frizura"
             android:gravity="left"
             />
         <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/zadtekst"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:layout_margin="@dimen/zadmargina"
             android:text="@string/Opis" />
 
         <EditText
             android:id="@+id/etOpis"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:lines="5"
-            android:hint="nazvati cvjećarnicu"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:layout_margin="@dimen/zadmargina"
+            android:lines="3"
+            android:hint="Ugovoriti termin"
             android:gravity="top"
             />
         <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:textSize="@dimen/zadtekst"
+            android:layout_margin="@dimen/zadmargina"
             android:text="@string/datum" />
         <Button
             android:id="@+id/bDatum"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginTop="@dimen/zadmargina"
             android:text="@string/unesiteDatum"
-            android:layout_width="fill_parent"
+            android:layout_width="@dimen/bodaberi"
+            android:layout_gravity="center"
             />
         <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:layout_margin="@dimen/zadmargina"
+            android:textSize="@dimen/zadtekst"
             android:text="@string/unesiteVrijeme" />
         <Button
             android:id="@+id/bVrijeme"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
             android:text="@string/odaberiteVrijeme"
-            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/zadmargina"
+            android:layout_width="@dimen/bodaberi"
+            android:layout_gravity="center"
             />
 
         <Button
             android:id="@+id/bPotvrdi"
-            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:layout_marginTop="60sp"
             android:text="@string/potvrdi"
-            android:textSize="16sp"
+            android:layout_width="@dimen/bodaberi"
+            android:layout_gravity="center"
             />
     </LinearLayout>
 

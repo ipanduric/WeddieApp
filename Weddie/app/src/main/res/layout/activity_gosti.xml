@@ -29,9 +29,10 @@
 
     <Button
         android:id="@+id/bDodajGosta"
-        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/dodaj"
+        android:background="@drawable/button"
+        android:layout_width="@dimen/bodaberi"
+        android:text="@string/Dodaj"
         android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"

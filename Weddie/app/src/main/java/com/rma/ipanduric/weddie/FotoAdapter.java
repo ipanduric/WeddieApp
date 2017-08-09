@@ -1,6 +1,7 @@
 package com.rma.ipanduric.weddie;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,19 +44,25 @@ public class FotoAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        View v=convertView;
         ViewHolder fotoVH;
-        if (convertView == null) {
+        if (v == null) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        convertView = inflater.inflate(R.layout.items_foto, parent, false);
-        fotoVH = new ViewHolder(convertView);
-        convertView.setTag(fotoVH);
+        v = inflater.inflate(R.layout.items_foto, parent, false);
+        fotoVH = new ViewHolder(v);
+        v.setTag(fotoVH);
     } else {
-        fotoVH = (ViewHolder) convertView.getTag();
+        fotoVH = (ViewHolder) v.getTag();
     }
 
     FotoItem foto = this.mFoto.get(position);
         fotoVH.tvFotoIme.setText(foto.getfIme());
-        return convertView;
+        if (position % 2 == 1) {
+            v.setBackgroundColor(Color.WHITE);
+        } else {
+            v.setBackgroundColor(Color.parseColor("#F5ECCE"));
+        }
+        return v;
 }
 private class ViewHolder {
 

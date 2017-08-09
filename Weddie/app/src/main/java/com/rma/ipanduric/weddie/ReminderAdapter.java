@@ -2,6 +2,7 @@ package com.rma.ipanduric.weddie;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,19 +51,26 @@ public class ReminderAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        View v=convertView;
         ReminderAdapter.ReminderViewHolder reminderViewHolder = null;
-        if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(
+        if (v == null) {
+            v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.items_zadatak, parent, false);
-            reminderViewHolder = new ReminderAdapter.ReminderViewHolder (convertView);
-            convertView.setTag(reminderViewHolder);
+            reminderViewHolder = new ReminderAdapter.ReminderViewHolder (v);
+            v.setTag(reminderViewHolder);
         } else {
-            reminderViewHolder = (ReminderAdapter.ReminderViewHolder) convertView.getTag();
+            reminderViewHolder = (ReminderAdapter.ReminderViewHolder) v.getTag();
         }
         final ZadatakItem zadatak = this.mZadaci.get(position);
         reminderViewHolder.tvNaziv.setText(zadatak.getzNaziv());
         reminderViewHolder.tvOpis.setText(zadatak.getzOpis());
         reminderViewHolder.tvDatum.setText(zadatak.getzVrijeme());
+
+        if (position % 2 == 1) {
+            v.setBackgroundColor(Color.WHITE);
+        } else {
+            v.setBackgroundColor(Color.parseColor("#F5ECCE"));
+        }
 
         final String sCalendar = zadatak.getzVrijeme();
         final Calendar calendar = Calendar.getInstance();
@@ -76,7 +84,7 @@ public class ReminderAdapter extends BaseAdapter{
             Log.e("Error Parsing",e.toString());
         }
 
-        return convertView;
+        return v;
     }
 
 
