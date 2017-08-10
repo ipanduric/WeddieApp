@@ -9,9 +9,9 @@ public class GostItem {
     private String gKategorija;
     private String gPrezime;
     private String gIme;
-    private String gBroj;
+    private int gBroj;
 
-    public GostItem (int ID, String kategorija, String prezime, String ime, String broj)
+    public GostItem (int ID, String kategorija, String prezime, String ime, int broj)
     {
         this.gKategorija = kategorija;
         this.gPrezime = prezime;
@@ -20,7 +20,7 @@ public class GostItem {
         this.gID = ID;
     }
 
-    public GostItem (String kategorija, String prezime, String ime, String broj)
+    public GostItem (String kategorija, String prezime, String ime, int broj)
     {
         this.gKategorija = kategorija;
         this.gPrezime = prezime;
@@ -41,12 +41,13 @@ public class GostItem {
         return gIme;
     }
 
-    public String getgBroj() {
+    public int getgBroj() {
         return gBroj;
     }
 
     public int getgID() {
         return gID;
     }
+
 
 }

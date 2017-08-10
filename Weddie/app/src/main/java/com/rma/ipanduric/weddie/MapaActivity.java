@@ -66,7 +66,16 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         MarkerOptions marker1 = new MarkerOptions();
         mGoogleMap.addMarker(marker1.position(new LatLng(45.697092, 18.331180)).title("Sala Melanie Gat").snippet("Sala Melanie Gat"));
         mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.684471, 18.406117)).title("Dvorane Kristal").snippet("Dvorane Kristal Belišće\n Tel: 031/600-900"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(60.1312,45.234134)).title("Also here."));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.751201, 18.167670)).title("Dvorana Gastro"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.759934, 18.185764)).title("Hotel Borik"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.651061, 18.417328)).title("Restoran Park Valpovo"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.665774, 18.406245)).title("Valpovački dvori"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.616567, 18.535080)).title("Sala Petrijevci"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.560314, 18.617557)).title("Park Prinčeva"));
+        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.551105, 18.675233)).title("Sala Gracija"));
+
+
+
 
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

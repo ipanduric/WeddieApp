@@ -1,10 +1,12 @@
 package com.rma.ipanduric.weddie;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
@@ -18,10 +20,25 @@ import java.util.List;
 public class GostiAdapter extends BaseAdapter {
 
     private ArrayList<GostItem> mGost;
+    private int total;
 
     public GostiAdapter(ArrayList<GostItem> gosti)
     {
         this.mGost = gosti;
+        this.total = sumValuesUp();
+
+    }
+
+    private int sumValuesUp() {
+        int sum = 0;
+        for (GostItem gostItem : mGost) {
+            sum += gostItem.getgBroj();
+        }
+        return sum;
+    }
+
+    public int getTotal() {
+        return total;
     }
 
 
@@ -52,24 +69,33 @@ public class GostiAdapter extends BaseAdapter {
         } else {
             gostViewHolder = (ViewHolder) convertView.getTag();
         }
+        if (position % 2 == 1) {
+            convertView.setBackgroundColor(Color.WHITE);
+        } else {
+            convertView.setBackgroundColor(Color.parseColor("#F5ECCE"));
+        }
+
 
         GostItem gost = this.mGost.get(position);
         gostViewHolder.tvPrezime.setText(gost.getgPrezime());
         gostViewHolder.tvIme.setText(gost.getgIme());
         gostViewHolder.tvKategorija.setText(gost.getgKategorija());
-        gostViewHolder.tvBroj.setText(gost.getgBroj());
+        gostViewHolder.tvBroj.setText(String.valueOf(gost.getgBroj()));
         return convertView;
     }
 
     public void dodajNovogGosta (GostItem gost) {
+        this.total += gost.getgBroj();
         this.mGost.add(gost);
         this.notifyDataSetChanged();
     }
 
     public void deleteAt(int position) {
+        this.total -= this.mGost.get(position).getgBroj();
         this.mGost.remove(position);
         this.notifyDataSetChanged();
     }
+
 
 
     private class ViewHolder {

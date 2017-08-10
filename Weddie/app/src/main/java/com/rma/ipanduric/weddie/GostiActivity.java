@@ -28,24 +28,27 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
     ListView lvGosti;
     GostiAdapter gostiAdapter;
     Button bDodaj;
+    TextView tvSuma, tvRez;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gosti);
         SetUpUI();
+
     }
 
     private void SetUpUI() {
         lvGosti = (ListView) findViewById(R.id.lvGosti);
         bDodaj = (Button) findViewById(R.id.bDodajGosta);
+        tvSuma = (TextView) findViewById(R.id.tvSuma);
+        tvRez = (TextView) findViewById(R.id.tvRez);
         bDodaj.setOnClickListener(this);
-
         this.SetUpLV();
-
-
-
+        tvRez.setText(String.valueOf(gostiAdapter.getTotal()));
+        Log.d ("DEBUG", String.valueOf(gostiAdapter.getTotal()));
     }
+
 
 
     private void SetUpLV() {
@@ -54,6 +57,8 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
             ArrayList<GostItem> gosti = Database.getInstance(this).getAllGosti();
             gostiAdapter = new GostiAdapter(gosti);
             lvGosti.setAdapter(gostiAdapter);
+        Log.d ("DEBUG2", String.valueOf(gostiAdapter.getTotal()));
+
 
 
         lvGosti.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -68,6 +73,8 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
                             public void onClick(DialogInterface dialog, int id) {
                                 Database.getInstance(getApplicationContext()).obrisiGosta((GostItem) gostiAdapter.getItem(position));
                                 gostiAdapter.deleteAt(position);
+                                tvRez.setText(String.valueOf(gostiAdapter.getTotal()));
+
                                 dialog.cancel();
                             }
                         });
@@ -88,7 +95,6 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, DodajGostaActivity.class);
@@ -103,10 +109,12 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
             String prezime = data.getStringExtra(OUTPUT_PREZIME);
             String ime = data.getStringExtra(OUTPUT_IME);
             String broj = data.getStringExtra(OUTPUT_BROJ);
+            int brojInt = Integer.parseInt(broj);
             ArrayList<GostItem> gosti = new ArrayList<>();
-            GostItem gost = new GostItem(kategorija, prezime, ime, broj);
+            GostItem gost = new GostItem(kategorija, prezime, ime, brojInt);
             Database.getInstance(getApplicationContext()).dodajGosta(gost);
-            gostiAdapter.dodajNovogGosta(new GostItem(kategorija, prezime, ime, broj));
+            gostiAdapter.dodajNovogGosta(new GostItem(kategorija, prezime, ime, brojInt));
+            tvRez.setText(String.valueOf(gostiAdapter.getTotal()));
 
         }
     }

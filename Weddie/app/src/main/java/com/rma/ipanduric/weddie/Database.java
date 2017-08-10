@@ -39,7 +39,7 @@ public class Database extends SQLiteOpenHelper {
     static final String SELECT_ALL_ZADACI = "SELECT " + Schema.ID + "," + Schema.NAZIV + ","+ Schema.OPIS + "," + Schema.DATUM  + " FROM " + Schema.TABLE_ZADACI;
 
     static final String CREATE_TABLE_GOSTI = "CREATE TABLE " + Schema.TABLE_GOSTI +
-            " (" + Schema.ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " + Schema.KATEGORIJA + " TEXT," + Schema.PREZIME + " TEXT,"  + Schema.IME + " TEXT," +  Schema.BROJ + " TEXT);";
+            " (" + Schema.ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " + Schema.KATEGORIJA + " TEXT," + Schema.PREZIME + " TEXT,"  + Schema.IME + " TEXT," +  Schema.BROJ + " INTEGER);";
 
     static final String DROP_TABLE_GOSTI = "DROP TABLE IF EXISTS " + Schema.TABLE_GOSTI;
 
@@ -133,7 +133,7 @@ public class Database extends SQLiteOpenHelper {
                 String kategorija = gostCursor.getString(1);
                 String prezime = gostCursor.getString(2);
                 String ime = gostCursor.getString(3);
-                String broj = gostCursor.getString(4);
+                int broj = gostCursor.getInt(4);
                 gost.add(new GostItem(ID, kategorija, prezime, ime, broj));
             } while (gostCursor.moveToNext());
         }

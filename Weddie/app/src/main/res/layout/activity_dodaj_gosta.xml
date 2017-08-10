@@ -86,7 +86,8 @@
         android:layout_marginTop="@dimen/zadmargina"
         android:layout_marginBottom="@dimen/zadmargina"
         android:layout_alignRight="@+id/bgDodaj"
-        android:layout_alignEnd="@+id/bgDodaj" />
+        android:layout_alignEnd="@+id/bgDodaj"
+        android:inputType="number"/>
 
     <Button
         android:id="@+id/bgDodaj"

@@ -26,7 +26,7 @@
         android:layout_margin="@dimen/padding"
         android:padding="@dimen/padding"
         android:divider="@android:color/transparent"
-        android:dividerHeight="4dp"
+        android:dividerHeight="4sp"
         >
     </ListView>
 </RelativeLayout>
