@@ -21,12 +21,15 @@ public class CvijeceActivity extends AppCompatActivity {
     private String[] ime;
     private String[] adr;
     private String[] tel;
+    private String[] lat;
+    private String[] lon;
 
 
     public static final String IME = "ime";
     public static final String ADR = "adr";
     public static final String TEL = "tel";
-
+    public static final String LATITUDE = "lat";
+    public static final String LONGITUDE = "lon";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +38,13 @@ public class CvijeceActivity extends AppCompatActivity {
         ime = getResources().getStringArray(R.array.cIme);
         adr = getResources().getStringArray(R.array.cAdr);
         tel = getResources().getStringArray(R.array.cTel);
-
+        lat = getResources().getStringArray(R.array.cLatitude);
+        lon = getResources().getStringArray(R.array.cLongitude);
         cvijece = new ArrayList<CvijeceItem>();
 
         //add the items to array list
         for (int i = 0; i < 40; i++) {
-            cvijece.add(new CvijeceItem(ime[i], adr[i], tel[i]));
+            cvijece.add(new CvijeceItem(ime[i], adr[i], tel[i], lat[i], lon[i]));
         }
         SetUpAdapter();
         lvClicked();
@@ -55,10 +59,14 @@ public class CvijeceActivity extends AppCompatActivity {
                 String ime = item.getcIme();
                 String adr = item.getcAdr();
                 String tel = item.getcTel();
+                String lat = item.getcLat();
+                String lon = item.getcLong();
                 Intent intent = new Intent(getApplicationContext(), CvDetailsActivity.class);
                 intent.putExtra(IME, ime);
                 intent.putExtra(ADR, adr);
                 intent.putExtra(TEL, tel);
+                intent.putExtra(LATITUDE, lat);
+                intent.putExtra(LONGITUDE, lon);
                 startActivity(intent);
             }
         });

@@ -8,13 +8,17 @@ public class CvijeceItem {
     private String cIme;
     private String cAdr;
     private String cTel;
+    private String cLat, cLong;
 
 
-    public CvijeceItem ( String ime, String adr, String tel)
+
+    public CvijeceItem ( String ime, String adr, String tel, String lat, String lon)
     {
         cIme = ime;
         cAdr = adr;
         cTel = tel;
+        cLat = lat;
+        cLong = lon;
 
     }
 
@@ -29,5 +33,9 @@ public class CvijeceItem {
     public String getcTel() {
         return cTel;
     }
+
+    public String getcLat() {return cLat;}
+
+    public String getcLong() {return cLong;}
 
 }

@@ -75,5 +75,13 @@
         android:textSize="20sp"
         android:textColor="@color/black"/>
 
+    <fragment
+        android:id="@+id/cvGoogleMap"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230sp"
+        android:layout_below="@id/tvTel"
+        android:layout_margin="13sp"/>
+
 
 </RelativeLayout>
