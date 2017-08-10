@@ -220,214 +220,261 @@
         <item>Abutilon Osijek</item>
         <item>Agava Osijek</item>
         <item>AGMI Đakovo</item>
-        <item>Aloe Đakovo</item>
         <item>Anemona Đakovo</item>
         <item>Cvjetić Nuštar</item>
         <item>Cvjetić Tovarnik</item>
         <item>Dalia Valpovo</item>
-        <item>Denis Vinkovci</item>
         <item>Dvorac Osijek</item>
         <item>Egzotika Čepin</item>
-        <item>Exclusive Vukovar</item>
         <item>Flamingo Vinkovci</item>
         <item>Florami 2 Osijek</item>
         <item>Fontana Vukovar</item>
-        <item>Gardenija Osijek</item>
         <item>Gladiola Vinkovci</item>
-        <item>Gladiola Vukovar</item>
-        <item>Hortus Osijek</item>
-        <item>Iris Ivankovo</item>
-        <item>Iris Vinkovci</item>
-        <item>Kamen-Štimac Đakovo</item>
         <item>Lana Antunovac</item>
         <item>Lavanda Đakovo</item>
         <item>Lotus Osijek</item>
-        <item>Ljubičica Osijek</item>
         <item>Maja Osijek</item>
         <item>Marta Đakovo</item>
         <item>Mimoza Osijek</item>
         <item>Mirta Vinkovci</item>
-        <item>Mozaik Osijek</item>
-        <item>Nena Otok</item>
         <item>Orhideja Valpovo</item>
         <item>Palma Đakovo</item>
         <item>Palma - Jukić Vinkovci</item>
-        <item>Palma - Jukić Vukovar</item>
         <item>Stella Đakovo</item>
-        <item>Tanja Vinkovci</item>
         <item>Tea Višnjevac</item>
-        <item>Valentina Ivankovo</item>
     </string-array>
     <string-array name="cAdr">
-        <item>Crkvena 134, Osijek</item>
-        <item>Kozjačka 33, Osijek</item>
-        <item>Ulica Biskupa Antuna Mandića bb,  Đakovo</item>
-        <item>Biskupa A. Mandića BB, Đakovo</item>
-        <item>Ljudevita Gaja 40, Đakovo</item>
+        <item>Crkvena ulica 134, Osijek</item>
+        <item>Kozjačka ulica 33, Osijek</item>
+        <item>Ulica Antuna Mandića bb,  Đakovo</item>
+        <item>Ulica Ljudevita Gaja 40, Đakovo</item>
         <item>Križni put 65, Nuštar</item>
-        <item>Vlč. Ivana Burika 1, Tovarnik</item>
-        <item>Osječka 8, Valpovo</item>
-        <item>A.K.Miočića 98, Vinkovci</item>
-        <item>Drinska 2, Osijek</item>
-        <item>Kralja Tomislava 1A, Čepin</item>
-        <item>Hrastik 15, Vukovar</item>
-        <item>Duga 34, Vinkovci</item>
+        <item>Ulica Ivana Burika 1, Tovarnik</item>
+        <item>Osječka ulica 8, Valpovo</item>
+        <item>Drinska ulica 2, Osijek</item>
+        <item>Ulica Kralja Tomislava 1A, Čepin</item>
+        <item>Duga ulica 34, Vinkovci</item>
         <item>Trg bana Josipa Jelačića BB, Osijek</item>
-        <item>Zagrebačka 7, Vukovar</item>
-        <item>Martina Divalta 111, Osijek</item>
-        <item>Dr.F.Tuđmana 30, Vukovar</item>
-        <item>Andrije Kačića Miošića 44, Vinkovci</item>
-        <item>Drinska 2, Osijek</item>
-        <item>Grobljanska 18, Ivankovo</item>
-        <item>Andrije Kačića Miošića BB, Vinkovci</item>
-        <item>Stjepana Radića 28, Đakovo</item>
-        <item>Hrvatske Republike 6A, Antunovac</item>
-        <item>Vladimira Nazora 28, Đakovo</item>
-        <item>A. Reisnera 119, Osijek</item>
-        <item>Trg bana Josipa Jelačića BB, Osijek</item>
-        <item>Svete Ane 88, Osijek</item>
-        <item>Franje Račkog 95, Đakovo</item>
+        <item>Zagrebačka ulica 7, Vukovar</item>
+        <item>Ulica Andrije Kačića Miošića 44, Vinkovci</item>
+        <item>Ulica Hrvatske Republike 6A, Antunovac</item>
+        <item>Ulica Vladimira Nazora 28, Đakovo</item>
+        <item>Ulica Adama Reisnera 119, Osijek</item>
+        <item>Ulica Svete Ane 88, Osijek</item>
+        <item>Ulica Franje Račkog 95, Đakovo</item>
         <item>Županijska ulica 34, Osijek</item>
-        <item>Glagoljaška 38, Vinkovci</item>
-        <item>Trpimirova bb, Osijek</item>
-        <item>Josipa Jurja Strossmayera 27, Otok</item>
-        <item>Stossmayerova 1a, Valpovo</item>
-        <item>B. Jelačića 33, Đakovo</item>
-        <item>Andrije Kacica Miošica 30, Vinkovci</item>
-        <item>Novo groblje BB, Vukovar</item>
-        <item>Bana Josipa Jelačića 44, Đakovo</item>
-        <item>Andrije Kacica Miošica 32, Vinkovci</item>
+        <item>Glagoljaška ulica 38, Vinkovci</item>
+        <item>Ulica Josipa Jurja Stossmayera 1a, Valpovo</item>
+        <item>Ulica bana Josipa Jelačića 33, Đakovo</item>
+        <item>Ulica Andrije Kačića Miošica 30, Vinkovci</item>
+        <item>Ulica bana Josipa Jelačića 44, Đakovo</item>
         <item>Ulica bana Josipa Jelačića 9A, Višnjevac</item>
-        <item>Željeznička 17a, Ivankovo</item>
     </string-array>
     <string-array name="cTel">
         <item>031504342</item>
         <item>031300071</item>
         <item>0317818528</item>
-        <item>0989901129</item>
         <item>031812484</item>
         <item>0989529968</item>
         <item>0989529968</item>
         <item>031495775</item>
-        <item>032303200</item>
         <item>031274854</item>
         <item>031381950</item>
-        <item>0996963553</item>
         <item>032331770</item>
         <item>031502626</item>
         <item>032410097</item>
-        <item>031508539</item>
-        <item>032303262</item>
         <item>032441218</item>
-        <item>031274854</item>
-        <item>0989706978</item>
-        <item>032303556</item>
-        <item>098438707</item>
         <item>098853351</item>
         <item>031812960</item>
         <item>0981953388</item>
-        <item>031502400</item>
         <item>031373099</item>
         <item>0913856179</item>
         <item>031202400</item>
         <item>032331440</item>
-        <item>031209640</item>
-        <item>0989216756</item>
         <item>031651562</item>
         <item>031813033</item>
         <item>032410668</item>
-        <item>032303280</item>
         <item>031812699</item>
-        <item>032303200</item>
         <item>031351622</item>
-        <item>098349561</item>
     </string-array>
 
     <string-array name="cLatitude">
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
-        <item>45.684471</item>
+        <item>45.559765</item>
+        <item>45.560580</item>
+        <item>45.303908</item>
+        <item>45.305424</item>
+        <item>45.332920</item>
+        <item>45.164635</item>
+        <item>45.657256</item>
+        <item>45.545842</item>
+        <item>45.523371</item>
+        <item>45.288557</item>
+        <item>45.556027</item>
+        <item>45.339127</item>
+        <item>45.291012</item>
+        <item>45.486998</item>
+        <item>45.319764</item>
+        <item>45.319764</item>
+        <item>45.554551</item>
+        <item>45.310648</item>
+        <item>45.556383</item>
+        <item>45.291470</item>
+        <item>45.659769</item>
+        <item>45.312511</item>
+        <item>45.291106</item>
+        <item>45.313069</item>
+        <item>45.564920</item>
+
     </string-array>
     <string-array name="cLongitude">
+        <item>18.730457</item>
+        <item>18.655311</item>
+        <item>18.402487</item>
+        <item>18.406336</item>
+        <item>18.842470</item>
+        <item>19.151958</item>
+        <item>18.419308</item>
+        <item>18.679482</item>
+        <item>18.576589</item>
+        <item>18.800105</item>
+        <item>18.716645</item>
+        <item>19.024301</item>
+        <item>18.787781</item>
+        <item>18.671535</item>
+        <item>18.416372</item>
+        <item>18.672030</item>
+        <item>18.672305</item>
+        <item>18.396667</item>
+        <item>18.675439</item>
+        <item>18.802982</item>
+        <item>18.417868</item>
+        <item>18.411997</item>
+        <item>18.789224</item>
+        <item>18.412849</item>
+        <item>18.628346</item>
+    </string-array>
+    <string-array name="LatSale">
+        <item>45.697092</item>
+        <item>45.684471</item>
+        <item>45.751201</item>
+        <item>45.759934</item>
+        <item>45.651061</item>
+        <item>45.665774</item>
+        <item>45.616567</item>
+        <item>45.560314</item>
+        <item>45.551105</item>
+        <item>45.548384</item>
+        <item>45.559791</item>
+        <item>45.560939</item>
+        <item>45.564914</item>
+        <item>45.760781</item>
+        <item>45.580888</item>
+        <item>45.524252</item>
+        <item>45.562300</item>
+        <item>45.558734</item>
+        <item>45.538914</item>
+        <item>45.538014</item>
+        <item>45.568630</item>
+        <item>45.551015</item>
+        <item>45.764480</item>
+        <item>45.335749</item>
+        <item>45.303924</item>
+        <item>45.324111</item>
+        <item>45.333852</item>
+        <item>45.333765</item>
+        <item>45.286794</item>
+        <item>45.270856</item>
+        <item>45.279217</item>
+        <item>45.287833</item>
+        <item>45.308538</item>
+        <item>45.231374</item>
+        <item>45.387121</item>
+        <item>45.138168</item>
+        <item>45.353563</item>
+        <item>45.198555</item>
+        <item>45.277412</item>
+    </string-array>
+    <string-array name="LongSale">
+        <item>18.331180</item>
+        <item>18.406117</item>
+        <item>18.167670</item>
         <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-        <item>18.185764</item>
-
-
+        <item>18.417328</item>
+        <item>18.406245</item>
+        <item>18.535080</item>
+        <item>18.617557</item>
+        <item>18.675233</item>
+        <item>18.677316</item>
+        <item>18.697495</item>
+        <item>18.694016</item>
+        <item>18.697276</item>
+        <item>18.157709</item>
+        <item>18.460917</item>
+        <item>19.063208</item>
+        <item>18.679558</item>
+        <item>18.675794</item>
+        <item>18.692530</item>
+        <item>18.643970</item>
+        <item>18.667806</item>
+        <item>18.675381</item>
+        <item>18.620475</item>
+        <item>18.421545</item>
+        <item>18.412386</item>
+        <item>18.401883</item>
+        <item>18.419816</item>
+        <item>18.420432</item>
+        <item>18.798014</item>
+        <item>18.804867</item>
+        <item>18.797667</item>
+        <item>18.806052</item>
+        <item>18.803806</item>
+        <item>18.801337</item>
+        <item>18.953732</item>
+        <item>18.720407</item>
+        <item>19.001444</item>
+        <item>19.358023</item>
+        <item>18.836817</item>
+    </string-array>
+    <string-array name="ImeSale">
+        <item>Sala Melanie Gat</item>
+        <item>Dvorane Kristal</item>
+        <item>Dvorana Gastro</item>
+        <item>Hotel Borik</item>
+        <item>Restoran Park Valpovo</item>
+        <item>Valpovački dvori</item>
+        <item>Sala Petrijevci</item>
+        <item>Park Prinčeva</item>
+        <item>Sala Gracija</item>
+        <item>Dvorana Antea</item>
+        <item>Old Bridge Pub</item>
+        <item>Restoran Muller</item>
+        <item>Restoran Kopika</item>
+        <item>Sala Galerija</item>
+        <item>Hotel Termia</item>
+        <item>Erdutski vinogradi</item>
+        <item>Hotel Osijek</item>
+        <item>Hotel Waldinger</item>
+        <item>Salon Zeko</item>
+        <item>Sala Classic</item>
+        <item>Zoo hotel</item>
+        <item>Sala Gracia</item>
+        <item>Hotel Patria</item>
+        <item>Dvorana Nikolina</item>
+        <item>Restoran Croatia Turist</item>
+        <item>Restoran Blaža</item>
+        <item>Centar Perić</item>
+        <item>Hotel Đakovo</item>
+        <item>Gradski Kućar</item>
+        <item>Dvorana Lucija</item>
+        <item>Barun Trenk</item>
+        <item>Hotel Admiral</item>
+        <item>Sala Valentino</item>
+        <item>Hotel Kunjevci</item>
+        <item>Kamelija</item>
+        <item>Salon Natali</item>
+        <item>Hotel Lav</item>
+        <item>Sala Princeps Principovac</item>
+        <item>Admiral Exclusive</item>
     </string-array>
 
 

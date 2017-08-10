@@ -43,7 +43,7 @@ public class CvijeceActivity extends AppCompatActivity {
         cvijece = new ArrayList<CvijeceItem>();
 
         //add the items to array list
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 25; i++) {
             cvijece.add(new CvijeceItem(ime[i], adr[i], tel[i], lat[i], lon[i]));
         }
         SetUpAdapter();

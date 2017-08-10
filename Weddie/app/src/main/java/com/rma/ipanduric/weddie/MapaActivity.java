@@ -32,6 +32,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
@@ -42,6 +44,8 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
     LocationRequest mLocationRequest;
     GoogleApiClient mGoogleApiClient;
     Marker mCurrLocationMarker;
+
+
 
 
     @Override
@@ -62,22 +66,19 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         this.mGoogleMap = googleMap;
+        String[] lats, longs, naziv;
+        lats = getResources().getStringArray(R.array.LatSale);
+        longs = getResources().getStringArray(R.array.LongSale);
+        naziv = getResources().getStringArray(R.array.ImeSale);
 
-        MarkerOptions marker1 = new MarkerOptions();
-        mGoogleMap.addMarker(marker1.position(new LatLng(45.697092, 18.331180)).title("Sala Melanie Gat").snippet("Sala Melanie Gat"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.684471, 18.406117)).title("Dvorane Kristal").snippet("Dvorane Kristal Belišće\n Tel: 031/600-900"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.751201, 18.167670)).title("Dvorana Gastro"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.759934, 18.185764)).title("Hotel Borik"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.651061, 18.417328)).title("Restoran Park Valpovo"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.665774, 18.406245)).title("Valpovački dvori"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.616567, 18.535080)).title("Sala Petrijevci"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.560314, 18.617557)).title("Park Prinčeva"));
-        mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(45.551105, 18.675233)).title("Sala Gracija"));
-
-
+        for (int i = 0; i < 39; i++)
+        {
+            mGoogleMap.addMarker(new MarkerOptions().position(new LatLng(Double.parseDouble(lats[i]), Double.parseDouble(longs[i]))).title(naziv[i]));
+        }
 
 
         //Initialize Google Play Services
+
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)
