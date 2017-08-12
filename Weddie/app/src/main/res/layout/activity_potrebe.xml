@@ -11,50 +11,39 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:focusable="true"
+    android:background="@drawable/screen"
     tools:context="com.rma.ipanduric.weddie.PotrebeActivity">
 
-    <EditText
-        android:id="@+id/etBroj"
-        android:layout_width="100dp"
+
+    <Button
+        android:id="@+id/bHrana"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/zadmargina"
-        android:layout_margin="@dimen/zadmargina"
-        android:hint="Broj osoba"
-        android:inputType="number"
+        android:background="@drawable/button"
+        android:layout_marginTop="200sp"
+        android:text="HRANA"
         />
 
     <Button
-        android:id="@+id/bIzracunaj"
-        android:layout_width="90sp"
+        android:id="@+id/bPice"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:layout_marginTop="@dimen/zadmargina"
-        android:layout_margin="@dimen/zadmargina"
-        android:text="Izračunaj"
-        android:layout_toRightOf="@id/etBroj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/bHrana"
+        android:text="PIĆE"
         />
-
     <Button
-        android:id="@+id/bSpremi"
-        android:layout_width="90sp"
+        android:id="@+id/bOstalo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:layout_marginTop="@dimen/zadmargina"
-        android:layout_margin="@dimen/zadmargina"
-        android:layout_toRightOf="@id/bIzracunaj"
-        android:text="SPREMI"
-        android:visibility="invisible"/>
-
-    <ListView
-        android:id="@+id/lvPotrebe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/zadmargina"
-        android:layout_margin="@dimen/zadmargina"
-        android:padding="@dimen/padding"
-        android:layout_below="@+id/etBroj"
-        android:divider="@android:color/transparent"
-        >
-    </ListView>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="OSTALO"
+        android:layout_below="@id/bPice"
+        />
 
 </RelativeLayout>

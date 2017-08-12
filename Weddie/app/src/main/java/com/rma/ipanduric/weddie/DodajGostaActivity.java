@@ -52,12 +52,12 @@ public class DodajGostaActivity extends AppCompatActivity implements View.OnClic
             prezime = etPrezime.getText().toString();
         }
         if (etIme.getText().toString().isEmpty()) {
-            Toast.makeText(this, "Molim Vas, unesite prezime!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Molim Vas, unesite ime!", Toast.LENGTH_SHORT).show();
         } else {
             ime = etIme.getText().toString();
         }
         if (etBroj.getText().toString().isEmpty()) {
-            Toast.makeText(this, "Molim Vas, unesite prezime!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Molim Vas, unesite broj osoba!", Toast.LENGTH_SHORT).show();
         } else {
             broj = etBroj.getText().toString();
         }

@@ -5,8 +5,7 @@
     <string name="Glazba">GLAZBA</string>
     <string name="Fotografija">FOTO</string>
     <string name="Cvijece">CVIJEĆE</string>
-    <string name="SastaviChecklist">DODAJ ZADATKE</string>
-    <string name="VidiCheckList">ZADACI</string>
+    <string name="SastaviChecklist">SHOPPING LISTA</string>
     <string name="DodajGoste">GOSTI</string>
     <string name="Trazi">TRAŽI</string>
     <string name="Web">Web mjesto:</string>
@@ -28,6 +27,8 @@
     <string name="Ime">Ime/imena osoba/e</string>
     <string name="brojGosti">Broj osoba:</string>
     <string name="Dodaj">DODAJ</string>
+    <string name="DodajStavke">DODAJ STAVKE</string>
+    <string name="SvecaneSale">SVEČANE SALE</string>
     <string-array name="sKategorije">
         <item>Obitelj</item>
         <item>Prijatelji</item>
@@ -475,6 +476,141 @@
         <item>Hotel Lav</item>
         <item>Sala Princeps Principovac</item>
         <item>Admiral Exclusive</item>
+    </string-array>
+    <string-array name="choices">
+        <item>Odijelo</item>
+        <item>Vjenčanica</item>
+        <item>Cipele</item>
+        <item>Pozivnice</item>
+        <item>Prstenje</item>
+        <item>Cvijeće</item>
+        <item>Ružmarin</item>
+        <item>Mašnice</item>
+        <item>Reveri</item>
+        <item>Kolači</item>
+        <item>Torte</item>
+    </string-array>
+    <string-array name="Hrana">
+        <item>PRASCI</item>
+        <item>JANJIĆI</item>
+        <item>PILEĆI BATAK I ZABATAK</item>
+        <item>ŠNICLE (10dkg)</item>
+        <item>DIVLJAČ</item>
+        <item>CARSKO POVRĆE</item>
+        <item>KRUMPIR</item>
+        <item>RIŽA</item>
+        <item>SALATA ZELENA</item>
+        <item>KUPUS</item>
+        <item>LUK</item>
+        <item>ČEŠNJAK</item>
+        <item>GLJIVE ZA UMAK</item>
+        <item>NJOKE/KROKETI</item>
+        <item>JAJA</item>
+        <item>MLIJEKO</item>
+        <item>GRAŠAK</item>
+        <item>MRKVA</item>
+        <item>PERŠINOV LIST</item>
+        <item>SOS OD RAJČICE</item>
+        <item>AJVAR</item>
+        <item>SENF</item>
+        <item>KRUH</item>
+    </string-array>
+    <string-array name="hJedinice">
+        <item>kom</item>
+        <item>kom</item>
+        <item>kom</item>
+        <item>kom</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kom</item>
+        <item>l</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>l</item>
+        <item>kg</item>
+        <item>kom</item>
+        <item>kom</item>
+    </string-array>
+    <string-array name="Ostalo">
+        <item>SOL</item>
+        <item>PAPAR MLJEVENI</item>
+        <item>PAPAR ZRNO</item>
+        <item>CRVENA PAPRIKA SLATKA</item>
+        <item>CREVNA PAPRIKA LJUTA</item>
+        <item>VEGETA</item>
+        <item>KRUŠNE MRVICE</item>
+        <item>BRAŠNO</item>
+        <item>ULJE</item>
+        <item>OCAT</item>
+        <item>MAST</item>
+        <item>LIMUN</item>
+        <item>ŠEĆER</item>
+        <item>SALVETE</item>
+        <item>ČAČKALICE</item>
+    </string-array>
+    <string-array name="oJedinice">
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>l</item>
+        <item>l</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kg</item>
+        <item>kom</item>
+        <item>kom</item>
+    </string-array>
+    <string-array name="Pice">
+        <item>PIVO OSJEČKO</item>
+        <item>RADLER</item>
+        <item>PIVO PAN</item>
+        <item>JAMNICA</item>
+        <item>JANA</item>
+        <item>CRNO VINO</item>
+        <item>BIJELO VINO</item>
+        <item>GUSTI SOK</item>
+        <item>COCA COLA</item>
+        <item>SPRITE</item>
+        <item>FANTA</item>
+        <item>STOCK</item>
+        <item>BLACKY</item>
+        <item>PELINKOVAC</item>
+        <item>JAGERMEISTER</item>
+        <item>RAKIJA</item>
+        <item>NESCAFE</item>
+    </string-array>
+    <string-array name="pJedinice">
+        <item>gajbi</item>
+        <item>gajbi</item>
+        <item>gajbi</item>
+        <item>gajbi</item>
+        <item>l</item>
+        <item>l</item>
+        <item>l</item>
+        <item>l</item>
+        <item>kartona</item>
+        <item>kartona</item>
+        <item>kartona</item>
+        <item>l</item>
+        <item>boca</item>
+        <item>l</item>
+        <item>l</item>
+        <item>l</item>
+        <item>kg</item>
     </string-array>
 
 

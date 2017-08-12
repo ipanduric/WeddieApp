@@ -34,7 +34,7 @@
         android:layout_marginLeft="40dp"/>
 
     <Button
-        android:id="@+id/bSastaviCheckListu"
+        android:id="@+id/bSastaviSL"
         android:layout_width="@dimen/bWidth"
         android:layout_height="wrap_content"
         android:background="@drawable/bsastavicl"
@@ -46,34 +46,25 @@
          />
 
     <Button
-        android:id="@+id/bVidiCheckListu"
-        android:layout_width="@dimen/bWidth"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bvidicl"
-        android:text="@string/VidiCheckList"
-        android:textColor="@color/bTextColor"
-        android:layout_below="@id/bSastaviCheckListu"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="40dp"/>
-
-    <Button
         android:id="@+id/bDodajGoste"
         android:layout_width="@dimen/bWidth"
         android:layout_height="wrap_content"
         android:background="@drawable/bgosti"
         android:text="@string/DodajGoste"
         android:textColor="@color/bTextColor"
-        android:layout_below="@id/bVidiCheckListu"
+        android:layout_below="@id/bSastaviSL"
         android:layout_marginTop="12dp"
         android:layout_marginLeft="40dp"/>
 
     <Button
         android:id="@+id/bVidiSale"
-        android:layout_width="55sp"
+        android:layout_width="@dimen/bWidth"
         android:layout_height="wrap_content"
-        android:background="@drawable/bsala"
+        android:background="@drawable/bvidisale"
+        android:text="@string/SvecaneSale"
+        android:textColor="@color/bTextColor"
         android:layout_below="@id/bDodajGoste"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="40dp"/>
 
     <Button
@@ -82,9 +73,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bglazba"
         android:textColor="@color/bTextColor"
-        android:layout_below="@id/bDodajGoste"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="110dp"
+        android:layout_below="@id/bVidiSale"
+        android:layout_alignLeft="@+id/bVidiSale"
+        android:layout_alignStart="@+id/bVidiSale"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="25dp"
         />" />
 
     <Button
@@ -93,9 +86,14 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bfotografija"
         android:textColor="@color/bTextColor"
-        android:layout_below="@id/bDodajGoste"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="185dp" />
+        android:layout_alignBaseline="@+id/bCvijece"
+        android:layout_alignBottom="@+id/bCvijece"
+        android:layout_toRightOf="@+id/bGlazba"
+        android:layout_toEndOf="@+id/bGlazba"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+
+        />
 
     <Button
         android:id="@+id/bCvijece"
@@ -103,7 +101,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bcvijece"
         android:textColor="@color/bTextColor"
-        android:layout_below="@id/bDodajGoste"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="260dp" />
+        android:layout_below="@+id/bVidiSale"
+        android:layout_toRightOf="@+id/bFoto"
+        android:layout_toEndOf="@+id/bFoto"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+
+        />
 </RelativeLayout>

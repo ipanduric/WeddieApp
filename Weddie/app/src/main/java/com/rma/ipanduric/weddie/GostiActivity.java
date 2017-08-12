@@ -110,9 +110,10 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
             String ime = data.getStringExtra(OUTPUT_IME);
             String broj = data.getStringExtra(OUTPUT_BROJ);
             int brojInt = Integer.parseInt(broj);
-            ArrayList<GostItem> gosti = new ArrayList<>();
+            SLItem slite = new SLItem(ime);
             GostItem gost = new GostItem(kategorija, prezime, ime, brojInt);
             Database.getInstance(getApplicationContext()).dodajGosta(gost);
+
             gostiAdapter.dodajNovogGosta(new GostItem(kategorija, prezime, ime, brojInt));
             tvRez.setText(String.valueOf(gostiAdapter.getTotal()));
 

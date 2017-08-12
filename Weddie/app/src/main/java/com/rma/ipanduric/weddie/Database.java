@@ -21,19 +21,20 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATE_TABLE_ZACACI);
+        db.execSQL(CREATE_TABLE_ZADACI);
         db.execSQL(CREATE_TABLE_GOSTI);
-
+        db.execSQL(CREATE_TABLE_SLIST);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(DROP_TABLE_ZADACI);
         db.execSQL(DROP_TABLE_GOSTI);
+        db.execSQL(DROP_TABLE_SLIST);
         this.onCreate(db);
     }
 
-    static final String CREATE_TABLE_ZACACI = "CREATE TABLE " + Schema.TABLE_ZADACI +
+    static final String CREATE_TABLE_ZADACI = "CREATE TABLE " + Schema.TABLE_ZADACI +
             " (" + Schema.ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " + Schema.NAZIV + " TEXT," + Schema.OPIS + " TEXT,"  + Schema.DATUM  + " TEXT);";
     static final String DROP_TABLE_ZADACI = "DROP TABLE IF EXISTS " + Schema.TABLE_ZADACI;
     static final String SELECT_ALL_ZADACI = "SELECT " + Schema.ID + "," + Schema.NAZIV + ","+ Schema.OPIS + "," + Schema.DATUM  + " FROM " + Schema.TABLE_ZADACI;
@@ -45,6 +46,13 @@ public class Database extends SQLiteOpenHelper {
 
     static final String SELECT_ALL_GOSTI = "SELECT " + Schema.ID + "," + Schema.KATEGORIJA + "," + Schema.PREZIME + "," + Schema.IME + ","
             + Schema.BROJ + " FROM " + Schema.TABLE_GOSTI;
+
+    static final String CREATE_TABLE_SLIST = "CREATE TABLE " + Schema.TABLE_SLIST +
+            " (" + Schema.ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " + Schema.LISTA  + " TEXT);";
+    static final String DROP_TABLE_SLIST = "DROP TABLE IF EXISTS " + Schema.TABLE_SLIST;
+    static final String SELECT_ALL_SLIST = "SELECT " + Schema.ID + "," + Schema.LISTA  + " FROM " + Schema.TABLE_SLIST;
+
+
 
     private Database (Context context){
         super(context.getApplicationContext(),Schema.DATABASE_NAME,null,Schema.SCHEMA_VERSION);
@@ -58,14 +66,12 @@ public class Database extends SQLiteOpenHelper {
     }
 
 
-
-
-
     public static class Schema {
-        private static final int SCHEMA_VERSION = 1;
+        private static final int SCHEMA_VERSION = 2;
         private static final String DATABASE_NAME = "Weddie.db";
         static final String TABLE_ZADACI = "zadaci";
         static final String TABLE_GOSTI = "gosti";
+        static final String TABLE_SLIST = "slist";
         static final String ID ="id";
         static final String NAZIV = "naziv";
         static final String OPIS = "opis";
@@ -74,6 +80,8 @@ public class Database extends SQLiteOpenHelper {
         static final String IME = "ime";
         static final String KATEGORIJA = "kategorija";
         static final String BROJ = "broj";
+        static final String LISTA = "lista";
+
     }
 
     public void dodajZadatak (ZadatakItem zadatakItem){
@@ -149,6 +157,38 @@ public class Database extends SQLiteOpenHelper {
         String[] arg = new String[]{String.valueOf(id)};
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(Schema.TABLE_GOSTI, Schema.ID + "=?",arg);
+        db.close();
+    }
+
+    public void dodajSL (SLItem slItem){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Schema.LISTA, slItem.getSlNaziv());
+        SQLiteDatabase writableDatabase = this.getWritableDatabase();
+        writableDatabase.insert(Schema.TABLE_SLIST, Schema.LISTA, contentValues);
+        writableDatabase.close();
+    }
+
+    public ArrayList<SLItem> getAllSL(){
+        SQLiteDatabase writableDatabase = this.getWritableDatabase();
+        Cursor slCursor = writableDatabase.rawQuery(SELECT_ALL_SLIST, null);
+        ArrayList<SLItem> sls = new ArrayList<>();
+        if(slCursor.moveToFirst()){
+            do {
+                int ID = slCursor.getInt(0);
+                String naziv = slCursor.getString(1);
+                sls.add(new SLItem(ID, naziv));
+            } while (slCursor.moveToNext());
+        }
+        slCursor.close();
+        writableDatabase.close();
+        return sls;
+    }
+
+    public void obrisiSL (SLItem slItem) {
+        int id = slItem.getSlID();
+        String[] arg = new String[]{String.valueOf(id)};
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(Schema.TABLE_SLIST, Schema.ID + "=?",arg);
         db.close();
     }
 

@@ -49,7 +49,7 @@ public class ReminderService extends WakeReminderIntentService {
                 .setSmallIcon(R.drawable.logo_round)
                 .setContentText(opis)
                 .setContentIntent(pi)
-                .setLights(Color.WHITE, 2000, 1000)
+                .setLights(Color.YELLOW, 2000, 1000)
                 .setVibrate(new long[]{500,600,700,800})
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
 

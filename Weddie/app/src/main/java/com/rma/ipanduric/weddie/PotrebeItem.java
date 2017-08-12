@@ -7,10 +7,10 @@ package com.rma.ipanduric.weddie;
 public class PotrebeItem {
 
         private String pnaziv;
-        private float prezultat;
+        private double prezultat;
         private String pjedinica;
 
-        public PotrebeItem(String naziv, float rezultat, String jedinica ) {
+        public PotrebeItem(String naziv, double rezultat, String jedinica ) {
             this.pnaziv = naziv;
             this.prezultat = rezultat;
             this.pjedinica = jedinica;
@@ -21,7 +21,7 @@ public class PotrebeItem {
             return this.pnaziv;
         }
 
-        public float getpRezultat() {
+        public double getpRezultat() {
             return this.prezultat;
         }
 
