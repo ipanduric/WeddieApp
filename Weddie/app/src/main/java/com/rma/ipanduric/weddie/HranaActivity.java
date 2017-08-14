@@ -71,11 +71,11 @@ public class HranaActivity extends AppCompatActivity implements View.OnClickList
                     double[] rezultat = {Math.round(broj/57), Math.round(broj/45), Math.round(broj*0.875), Math.round(broj*0.625), (broj/5), Math.round(broj/13),
                             (broj/8), (broj/50), (broj/16), Math.round(broj/6), Math.round(broj/11), (broj/400),
                             Math.round(broj/33), Math.round(broj/26), Math.round(broj/2.5), (broj/5), (broj/200), (broj/100), Math.round(broj/800),
-                            (broj/200), (broj/400), Math.round(broj/400), Math.round(broj/5)};
+                            (broj/200), (broj/400), Math.round(broj/400), Math.round(broj/5), (broj/10), Math.round(broj/30)};
 
                     potrebe = new ArrayList<PotrebeItem>();
                     //add the items to array list
-                    for (int i = 0; i < 23; i++) {
+                    for (int i = 0; i < 25; i++) {
                         potrebe.add(new PotrebeItem(naziv[i], rezultat[i], jedinica[i]));
                     }
 

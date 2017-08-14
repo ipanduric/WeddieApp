@@ -21,10 +21,10 @@ public class FotoActivity extends AppCompatActivity {
     private String[] ime;
     private String[] web;
     private String[] tel;
-    private int[] pic = {R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece,
-            R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece,
-            R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece,
-            R.drawable.bcvijece, R.drawable.bcvijece, R.drawable.bcvijece};
+    private int[] pic = {R.drawable.anita, R.drawable.boris, R.drawable.element, R.drawable.exitus, R.drawable.click, R.drawable.colorexpress, R.drawable.jura,
+            R.drawable.kreso, R.drawable.mogoros, R.drawable.sunce, R.drawable.brzica, R.drawable.jelena, R.drawable.leon, R.drawable.marinko,
+            R.drawable.mrky, R.drawable.piksel, R.drawable.pim, R.drawable.proces, R.drawable.effect, R.drawable.inca, R.drawable.sarcevic,
+            R.drawable.zoom};
 
 
     public static final String IME = "ime";
@@ -44,7 +44,7 @@ public class FotoActivity extends AppCompatActivity {
         foto = new ArrayList<FotoItem>();
 
         //add the items to array list
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 22; i++) {
             foto.add(new FotoItem(ime[i], web[i], tel[i], pic[i]));
         }
         SetUpAdapter();

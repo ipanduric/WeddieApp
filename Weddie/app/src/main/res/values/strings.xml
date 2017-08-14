@@ -136,15 +136,12 @@
     <string-array name="fIme">
         <item>Anita Valpovo</item>
         <item>Boris Perković Osijek</item>
-        <item>Danny Film Našice</item>
         <item>Element Media Osijek</item>
         <item>Exitus Produkcija Osijek</item>
-        <item>Foto Art Osijek</item>
         <item>Foto Click Đakovo</item>
         <item>Foto-color Express Đakovo</item>
         <item>Foto Jura Đakovo</item>
         <item>Foto Krešo Osijek</item>
-        <item>Foto Medo Vinkovci</item>
         <item>Foto Mogoroš Valpovo</item>
         <item>Foto Sunce Vukovar</item>
         <item>Foto video Brzica Đakovo</item>
@@ -155,7 +152,6 @@
         <item>Piksel Osijek</item>
         <item>PiM studio Osijek</item>
         <item>Proces Darda</item>
-        <item>Produkcija Vision Osijek</item>
         <item>Studio Effect Đakovo</item>
         <item>Studio Inča Osijek</item>
         <item>Studio Šarčević Belišće</item>
@@ -164,15 +160,12 @@
     <string-array name="fWeb">
         <item>foto-anita.com</item>
         <item>borisperkovic.daportfolio.com</item>
-        <item>danny-film.wixsite.com/danny-film</item>
         <item>elementmedia.hr</item>
         <item>exituspro.com</item>
-        <item>fotoart.hr</item>
         <item>facebook.com/Foto-Click-Djakovo-1689885941238006</item>
         <item>facebook.com/Foto-Color-EXPRESS-105738096140692</item>
         <item>foto-jura.hr</item>
         <item>facebook.com/Foto-Krešo-754162034625034/?fref=ts</item>
-        <item>foto-medo.com</item>
         <item>facebook.com/foto.mogoros</item>
         <item>facebook.com/fotosunce</item>
         <item>facebook.com/jelenacolakovic84</item>
@@ -183,7 +176,6 @@
         <item>facebook.com/piksel.foto</item>
         <item>pim-wedding.net</item>
         <item>fotostudioproces.hr</item>
-        <item>facebook.com/petarmandariccinema</item>
         <item>studio-effect.hr</item>
         <item>studioinca.com</item>
         <item>kresimirsarcevic.com</item>
@@ -192,15 +184,12 @@
     <string-array name="fTel">
         <item>031650542</item>
         <item>0959129627</item>
-        <item>0915164425</item>
         <item>098423654</item>
         <item>0913032514</item>
-        <item>031214101</item>
         <item>098801722</item>
         <item>098493218</item>
         <item>0919437942</item>
         <item>031201200</item>
-        <item>0989377203</item>
         <item>031651704</item>
         <item>032444004</item>
         <item>098805425</item>
@@ -211,7 +200,6 @@
         <item>0958551468</item>
         <item>0911999035</item>
         <item>0959020732</item>
-        <item>0981902419</item>
         <item>0959400400</item>
         <item>0912731966</item>
         <item>0989728047</item>
@@ -514,6 +502,8 @@
         <item>AJVAR</item>
         <item>SENF</item>
         <item>KRUH</item>
+        <item>KOLAČI</item>
+        <item>TORTE</item>
     </string-array>
     <string-array name="hJedinice">
         <item>kom</item>
@@ -538,6 +528,8 @@
         <item>l</item>
         <item>kg</item>
         <item>kom</item>
+        <item>kom</item>
+        <item>kg</item>
         <item>kom</item>
     </string-array>
     <string-array name="Ostalo">

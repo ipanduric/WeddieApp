@@ -21,7 +21,7 @@ public class GlazbaActivity extends AppCompatActivity {
     private String[] ime;
     private String[] web;
     private String[] tel;
-    private int[] pic = {R.drawable.allegro, R.drawable.alkotest, R.drawable.babylon, R.drawable.bestman, R.drawable.bolero, R.drawable.bolero, R.drawable.cappuccino, R.drawable.djprof, R.drawable.essekeri, R.drawable.gsvox, R.drawable.jovalius,
+    private int[] pic = {R.drawable.allegro, R.drawable.alkotest, R.drawable.babylon, R.drawable.bestman, R.drawable.bolero, R.drawable.bonus, R.drawable.cappuccino, R.drawable.djprof, R.drawable.essekeri, R.drawable.gsvox, R.drawable.jovalius,
             R.drawable.krivispoj, R.drawable.lyra, R.drawable.quattro, R.drawable.passage, R.drawable.slavoniaband, R.drawable.standard,
             R.drawable.still, R.drawable.stoposto, R.drawable.stravianae, R.drawable.bosutski, R.drawable.dyaco, R.drawable.dzentlmeni, R.drawable.fijaker,
             R.drawable.garavi, R.drawable.kas, R.drawable.lege, R.drawable.libero, R.drawable.trecasmjena, R.drawable.viva, R.drawable.west};
