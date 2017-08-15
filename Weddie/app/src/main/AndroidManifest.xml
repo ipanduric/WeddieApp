@@ -47,18 +47,14 @@
         <activity
             android:name=".GlazbaActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".GlazbaItem" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".MapaActivity" />
         <activity android:name=".FotoActivity" />
         <activity android:name=".CvijeceActivity" />
-        <activity android:name=".CvijeceItem" />
         <activity android:name=".CvDetailsActivity" />
         <activity android:name=".ZadaciActivity" />
-        <activity android:name=".ZadatakItem" />
         <activity android:name=".DodajZadatakActivity" />
         <activity android:name=".GostiActivity" />
-        <activity android:name=".GostItem" />
         <activity android:name=".DodajGostaActivity" />
         <activity android:name=".PotrebeActivity" />
         <activity android:name=".SLActivity" />
