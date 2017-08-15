@@ -9,30 +9,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/zadmargina"
         android:layout_margin="@dimen/zadmargina"
-        android:hint="Broj osoba"
+        android:hint="@string/brojosoba"
         android:inputType="number"
         />
 
     <Button
         android:id="@+id/bIzracunaj"
-        android:layout_width="90sp"
+        android:layout_width="@dimen/bodaberi"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:layout_marginTop="@dimen/zadmargina"
         android:layout_margin="@dimen/zadmargina"
-        android:text="Izračunaj"
+        android:text="@string/Izracunaj"
         android:layout_toRightOf="@id/etBroj"
         />
 
     <Button
         android:id="@+id/bSpremi"
-        android:layout_width="90sp"
+        android:layout_width="@dimen/bodaberi"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:layout_marginTop="@dimen/zadmargina"
         android:layout_margin="@dimen/zadmargina"
         android:layout_toRightOf="@id/bIzracunaj"
-        android:text="SPREMI"
+        android:text="@string/spremi"
         android:visibility="invisible"/>
 
     <ListView

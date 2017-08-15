@@ -74,7 +74,6 @@ public class GostiActivity extends AppCompatActivity implements View.OnClickList
                                 Database.getInstance(getApplicationContext()).obrisiGosta((GostItem) gostiAdapter.getItem(position));
                                 gostiAdapter.deleteAt(position);
                                 tvRez.setText(String.valueOf(gostiAdapter.getTotal()));
-
                                 dialog.cancel();
                             }
                         });

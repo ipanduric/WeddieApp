@@ -32,7 +32,7 @@ public class ReminderService extends WakeReminderIntentService {
         notificationIntent.putExtra(ReminderManager.KEY_ROWID, rowId);
         ArrayList<ZadatakItem> zadaci = Database.getInstance(this).getAllZadaci();
         String naziv,opis;
-        naziv="";
+        naziv="Podsjetnik";
         opis ="";
         int i=0;
         for(i=0;i<zadaci.size();i++){

@@ -20,16 +20,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:textSize="25sp"
+        android:layout_marginLeft="@dimen/lvmargina"
+        android:layout_marginStart="@dimen/lvmargina"
+        android:textSize="@dimen/tekst"
         android:textColor="@color/black"
         android:textStyle="bold"
         />
 
     <TextView
         android:id="@+id/tvAdr1"
-        android:layout_width="400sp"
+        android:layout_width="@dimen/sirina"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/tvIme"
@@ -37,20 +37,20 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="@string/Adr"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"
         />
 
     <TextView
         android:id="@+id/tvAdr"
-        android:layout_width="400sp"
+        android:layout_width="@dimen/sirina"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/tvAdr1"
         android:layout_marginLeft="1dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"
         />
 
@@ -59,9 +59,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvAdr"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/zadmargina"
         android:text="@string/Tel"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"/>
 
     <TextView
@@ -69,19 +69,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTel1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/zadmargina"
         android:autoLink="phone"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"/>
 
     <fragment
         android:id="@+id/cvGoogleMap"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="230sp"
+        android:layout_height="@dimen/mapavisina"
         android:layout_below="@id/tvTel"
-        android:layout_margin="13sp"/>
+        android:layout_margin="@dimen/lvmargina"/>
 
 
 </RelativeLayout>

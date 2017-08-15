@@ -13,17 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button"
-        android:layout_margin="15sp"/>
+        android:layout_margin="@dimen/lvmargina"/>
 
     <ListView
         android:id="@+id/lvSL"
         android:layout_width="match_parent"
-        android:layout_height="400sp"
+        android:layout_height="@dimen/sirina"
         android:layout_below="@id/bDodajStavke"
-        android:layout_margin="15sp"
+        android:layout_margin="@dimen/lvmargina"
         android:padding="@dimen/padding"
         android:divider="@android:color/transparent"
-        android:dividerHeight="4sp">
+        android:dividerHeight="@dimen/padding">
     </ListView>
 
 

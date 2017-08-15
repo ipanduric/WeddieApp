@@ -46,7 +46,6 @@ public class CvDetailsActivity extends AppCompatActivity implements OnMapReadyCa
     LocationRequest cvLocationRequest;
     Marker cvCurrLocationMarker;
 
-
     GoogleMap cvGoogleMap;
     GoogleApiClient cvGoogleApiClient;
     LatLng marker;
@@ -67,7 +66,6 @@ public class CvDetailsActivity extends AppCompatActivity implements OnMapReadyCa
         setContentView(R.layout.activity_cv_details);
         initialize();
         SetUp();
-
     }
 
     private void SetUp() {

@@ -10,8 +10,8 @@
     <TextView
         android:id="@+id/tvaBrojGosti"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textSize="24sp"
+        android:layout_height="@dimen/marginamain"
+        android:textSize="@dimen/tekst"
         android:textStyle="bold"
         android:hint="3"
         android:gravity="right"
@@ -22,20 +22,20 @@
         android:layout_toEndOf="@+id/tvaIme" />
     <TextView
         android:id="@+id/tvaPrezime"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/tvsirina2"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="17dp"
+        android:textSize="@dimen/tekst3"
         android:hint="prezime"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:padding="@dimen/padding"
-        android:layout_margin="2sp"/>
+        android:layout_margin="@dimen/tvmargin"/>
 
     <TextView
         android:id="@+id/tvaIme"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/tvsirina2"
         android:layout_height="wrap_content"
         android:hint="@string/Ime"
         android:textSize="15sp"
@@ -48,14 +48,15 @@
 
     <TextView
         android:id="@+id/tvaKategorija"
-        android:layout_width="300sp"
+        android:layout_width="@dimen/tvsirina2"
         android:layout_height="wrap_content"
         android:hint="kategorija"
         android:gravity="left"
         android:layout_below="@id/tvaIme"
-        android:layout_marginStart="10sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginTop="2sp"
+        android:textStyle="italic"
+        android:layout_marginStart="@dimen/zadmargina"
+        android:layout_marginLeft="@dimen/zadmargina"
+        android:layout_marginTop="@dimen/tvmargin"
         android:padding="@dimen/padding"
 
         />

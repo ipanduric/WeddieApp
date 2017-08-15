@@ -12,4 +12,21 @@
     <dimen name="lvtekst">15sp</dimen>
     <dimen name="lvmargina">15sp</dimen>
     <dimen name="lvwidth">160sp</dimen>
+    <dimen name="tekst">25sp</dimen>
+    <dimen name="tekst2">20sp</dimen>
+    <dimen name="tekst3">17sp</dimen>
+    <dimen name="sirina">400sp</dimen>
+    <dimen name="mapavisina">230sp</dimen>
+    <dimen name="buttonmarg">60sp</dimen>
+    <dimen name="slikasirina">200sp</dimen>
+    <dimen name="buttonm">20sp</dimen>
+    <dimen name="marginamain">40sp</dimen>
+    <dimen name="marginafotob">30sp</dimen>
+    <dimen name="buttonsirina">55sp</dimen>
+    <dimen name="tvmargin">2sp</dimen>
+    <dimen name="tvsirina">220sp</dimen>
+    <dimen name="tvsirina2">300sp</dimen>
+    <dimen name="marginpot">5sp</dimen>
+    <dimen name="sirinastavke">250sp</dimen>
+    <dimen name="margin">3sp</dimen>
 </resources>

@@ -18,44 +18,44 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:textSize="25sp"
+        android:layout_marginLeft="@dimen/zadmargina"
+        android:layout_marginStart="@dimen/zadmargina"
+        android:textSize="@dimen/tekst"
         android:textColor="@color/black"
         android:textStyle="bold"
         />
     <ImageView
         android:id="@+id/ivPic"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/slikasirina"
         android:scaleType="fitXY"
         android:layout_below="@id/tvIme"
         android:layout_marginTop="20sp"
         />
     <TextView
         android:id="@+id/tvWeb1"
-        android:layout_width="400sp"
+        android:layout_width="@dimen/sirina"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="@dimen/zadmargina"
         android:layout_below="@+id/ivPic"
         android:layout_marginLeft="1dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="@string/Web"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"
         />
 
     <TextView
         android:id="@+id/tvWeb"
-        android:layout_width="400sp"
+        android:layout_width="@dimen/sirina"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/zadmargina"
         android:layout_below="@+id/tvWeb1"
         android:layout_marginLeft="1dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"
         />
 
@@ -66,7 +66,7 @@
         android:layout_below="@id/tvWeb"
         android:layout_marginTop="10dp"
         android:text="@string/Tel"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"/>
 
     <TextView
@@ -74,10 +74,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTel1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/zadmargina"
         android:autoLink="phone"
         android:clickable="true"
-        android:textSize="20sp"
+        android:textSize="@dimen/tekst2"
         android:textColor="@color/black"/>
 
 </RelativeLayout>

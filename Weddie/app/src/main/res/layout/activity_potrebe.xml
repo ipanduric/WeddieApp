@@ -21,8 +21,8 @@
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:layout_marginTop="200sp"
-        android:text="HRANA"
+        android:layout_marginTop="@dimen/slikasirina"
+        android:text="@string/hrana"
         />
 
     <Button
@@ -31,9 +31,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="@dimen/buttonm"
         android:layout_below="@id/bHrana"
-        android:text="PIĆE"
+        android:text="@string/pice"
         />
     <Button
         android:id="@+id/bOstalo"
@@ -41,8 +41,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20sp"
-        android:text="OSTALO"
+        android:layout_marginTop="@dimen/buttonm"
+        android:text="@string/ostalo"
         android:layout_below="@id/bPice"
         />
 

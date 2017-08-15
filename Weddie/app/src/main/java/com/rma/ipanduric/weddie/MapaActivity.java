@@ -162,7 +162,7 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // this thread waiting for the user's response! After the user
                 // sees the explanation, try again to request the permission.
                 new AlertDialog.Builder(this)
-                        .setTitle("Location Permission Needed")
+                        .setTitle("Potrebna dozvola za lokaciju")
                         .setMessage("Aplikacija treba vašu dozvolu za korištenje lokacije")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override

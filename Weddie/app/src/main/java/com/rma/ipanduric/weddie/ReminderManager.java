@@ -30,7 +30,7 @@ public class ReminderManager {
         Log.i(TAG, "Ušlo u funkciju");
         Intent i = new Intent(mContext, OnAlarmReceiver.class);
         i.putExtra(ReminderManager.KEY_ROWID, (long)taskId);
-        PendingIntent pi = PendingIntent.getBroadcast(mContext, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pi = PendingIntent.getBroadcast(mContext, taskId, i, PendingIntent.FLAG_UPDATE_CURRENT);
         mAlarmManager.set(AlarmManager.RTC_WAKEUP, when.getTimeInMillis(), pi);
 
 

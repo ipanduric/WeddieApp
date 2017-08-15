@@ -52,7 +52,7 @@ public class ZadaciActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(ZadaciActivity.this);
-                dialogBuilder.setMessage("Želite li obrisati zadatak?");
+                dialogBuilder.setMessage("Želite li obrisati podsjetnik?");
                 dialogBuilder.setCancelable(true);
                 dialogBuilder.setPositiveButton(
                         "Da",

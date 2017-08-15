@@ -68,13 +68,13 @@ public class PiceActivity extends AppCompatActivity implements View.OnClickListe
                     double broj = Double.parseDouble(no);
                     naziv = getResources().getStringArray(R.array.Pice);
                     jedinica = getResources().getStringArray(R.array.pJedinice);
-                    double[] rezultat = {Math.round(broj/20), Math.round(broj/40), Math.round(broj/40), Math.round(broj/20), (broj/8), Math.round(broj/6),
+                    double[] rezultat = {Math.round(broj/12.5), Math.round(broj/40), Math.round(broj/20), (broj/8), Math.round(broj/6),
                             (broj/4), (broj/4), Math.round(broj/16), Math.round(broj/26), Math.round(broj/26), Math.round(broj/26), Math.round(broj/16),
                             (broj/16), Math.round(broj/13), (broj/20), (broj*(0.01))};
 
                     potrebe = new ArrayList<PotrebeItem>();
                     //add the items to array list
-                    for (int i = 0; i < 17; i++) {
+                    for (int i = 0; i < 16; i++) {
                         potrebe.add(new PotrebeItem(naziv[i], rezultat[i], jedinica[i]));
                     }
 

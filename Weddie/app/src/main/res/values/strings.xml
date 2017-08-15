@@ -29,6 +29,15 @@
     <string name="Dodaj">DODAJ</string>
     <string name="DodajStavke">DODAJ STAVKE</string>
     <string name="SvecaneSale">SVEČANE SALE</string>
+    <string name="spremi">SPREMI</string>
+    <string name="Izracunaj">IZRAČUNAJ</string>
+    <string name="brojosoba">Broj osoba</string>
+    <string name="hrana">HRANA</string>
+    <string name="pice">PIĆE</string>
+    <string name="ostalo">OSTALO</string>
+    <string name="datum1">Datum</string>
+    <string name="opis">Opis:</string>
+    <string name="naziv">Naziv:</string>
     <string-array name="sKategorije">
         <item>Obitelj</item>
         <item>Prijatelji</item>
@@ -567,9 +576,8 @@
         <item>kom</item>
     </string-array>
     <string-array name="Pice">
-        <item>PIVO OSJEČKO</item>
+        <item>PIVO</item>
         <item>RADLER</item>
-        <item>PIVO PAN</item>
         <item>JAMNICA</item>
         <item>JANA</item>
         <item>CRNO VINO</item>
@@ -586,7 +594,6 @@
         <item>NESCAFE</item>
     </string-array>
     <string-array name="pJedinice">
-        <item>gajbi</item>
         <item>gajbi</item>
         <item>gajbi</item>
         <item>gajbi</item>
