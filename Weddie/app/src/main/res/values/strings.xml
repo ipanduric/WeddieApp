@@ -480,12 +480,17 @@
         <item>Cipele</item>
         <item>Pozivnice</item>
         <item>Prstenje</item>
+        <item>Šminka</item>
+        <item>Nakit</item>
         <item>Cvijeće</item>
         <item>Ružmarin</item>
         <item>Mašnice</item>
         <item>Reveri</item>
         <item>Kolači</item>
         <item>Torte</item>
+        <item>Salvete</item>
+        <item>Čaše</item>
+        <item>Piće</item>
     </string-array>
     <string-array name="Hrana">
         <item>PRASCI</item>
