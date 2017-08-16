@@ -25,7 +25,8 @@
         android:theme="@style/MyTheme"
         android:name="android.support.multidex.MultiDexApplication">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,16 +48,22 @@
         <activity
             android:name=".GlazbaActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".DetailsActivity" />
+        <activity android:name=".DetailsActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".MapaActivity" />
         <activity android:name=".FotoActivity" />
         <activity android:name=".CvijeceActivity" />
-        <activity android:name=".CvDetailsActivity" />
+        <activity android:name=".CvDetailsActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".ZadaciActivity" />
-        <activity android:name=".DodajZadatakActivity" />
-        <activity android:name=".GostiActivity" />
-        <activity android:name=".DodajGostaActivity" />
-        <activity android:name=".PotrebeActivity" />
+        <activity android:name=".DodajZadatakActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GostiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DodajGostaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PotrebeActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".SLActivity" />
         <activity android:name=".HranaActivity" />
         <activity android:name=".PiceActivity" />
